@@ -9,4 +9,5 @@
 		<welcome-file>default.html</welcome-file>
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
-	</welcome-file-lis
+	</welcome-file-list>
+</web-app>
