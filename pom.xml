@@ -4,4 +4,8 @@
   <groupId>com.ainlp</groupId>
   <artifactId>QA_NLP</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSH
+  <version>0.0.1-SNAPSHOT</version>
+  <name>QA_NLP Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+ 
