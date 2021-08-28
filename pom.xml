@@ -14,4 +14,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <depen
+    <dependency>
+      <groupId>com.hankcs</groupId>
+      <artifactId>hanlp</artifactId>
+      <vers
