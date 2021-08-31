@@ -32,4 +32,7 @@
     <!--加入对commons-io的依赖-->
     <dependency>
       <groupId>commons-io</groupId>
-      <artifactId>co
+      <artifactId>commons-io</artifactId>
+      <version>2.4</version>
+    </dependency>
+    <dependency>
