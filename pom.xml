@@ -49,4 +49,7 @@
     <artifactId>jetty-maven-plugin</artifactId>
     <version>9.3.6.v20151106</version>
     <executions>
-    	<!-- 在 inte
+    	<!-- 在 integration-test 的 pre 阶段启动 jetty -->
+    	<execution>
+    		<id>start-jetty</id>
+    	
