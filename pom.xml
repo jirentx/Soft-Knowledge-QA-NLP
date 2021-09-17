@@ -59,4 +59,8 @@
     	</execution>
     	<!-- 在 integration-test 的 post 阶段关闭 jetty -->
     	<execution>
-    		<id>stop-jetty</id
+    		<id>stop-jetty</id>
+    		<phase>post-integration-test</phase>
+    		<goals>
+    			<goal>stop</goal>
+  
