@@ -63,4 +63,11 @@
     		<phase>post-integration-test</phase>
     		<goals>
     			<goal>stop</goal>
-  
+    		</goals>
+    	</execution>
+    </executions>
+</plugin>
+
+</plugins>
+</build>
+</proj
