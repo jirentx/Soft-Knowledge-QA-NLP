@@ -13,4 +13,7 @@ public class Bayes {
 	//统计关键词出现在总文本中的次数
 	getCountKeyWordAllText();
 	//统计关键词同时出现在所有文本中的概率
-	getChanceKeyWor
+	getChanceKeyWordSameTime();
+	//使用朴素贝叶斯算法求出分类的概率
+	classByBayes();*/
+}
