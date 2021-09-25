@@ -16,4 +16,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-import org.apache.lucene.analysis.tokenattributes.FlagsAttri
+import org.apache.lucene.analysis.tokenattributes.FlagsAttribute;
+import org.apache.lucene.search.ScoreCachingWrappingScorer;
+
+import com.cnn.entity.
