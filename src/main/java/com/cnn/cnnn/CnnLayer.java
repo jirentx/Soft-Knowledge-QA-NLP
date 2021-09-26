@@ -25,4 +25,6 @@ import com.word2vec.Word2VEC;
 
 
 public class CnnLayer {
-	public static
+	public static void main(String[] args) throws IOException {
+//		long startTime = System.currentTimeMillis();
+//	
