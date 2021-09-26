@@ -19,4 +19,10 @@ import java.util.Set;
 import org.apache.lucene.analysis.tokenattributes.FlagsAttribute;
 import org.apache.lucene.search.ScoreCachingWrappingScorer;
 
-import com.cnn.entity.
+import com.cnn.entity.Cnn;
+import com.cnn.utils.CnnUtils;
+import com.word2vec.Word2VEC;
+
+
+public class CnnLayer {
+	public static
