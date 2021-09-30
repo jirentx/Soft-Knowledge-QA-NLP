@@ -27,4 +27,7 @@ import com.word2vec.Word2VEC;
 public class CnnLayer {
 	public static void main(String[] args) throws IOException {
 //		long startTime = System.currentTimeMillis();
-//	
+//		String str0 = "哪些交通违规行为可以不被处罚";
+//		String str1 = "机动车驾驶人的哪些驾驶行为会被扣分";
+//		
+//		mainLayer(st
