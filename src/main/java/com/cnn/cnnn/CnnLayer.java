@@ -38,4 +38,6 @@ public class CnnLayer {
 		@SuppressWarnings("resource")
 		//Scanner sc = new Scanner(System.in);
 		//String input = sc.nextLine();
-		String input = "在小区里养
+		String input = "在小区里养鸡的是什么心态跟谁投诉";
+//		float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
+//		System.err.prin
