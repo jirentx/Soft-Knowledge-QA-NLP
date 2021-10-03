@@ -32,4 +32,8 @@ public class CnnLayer {
 //		
 //		mainLayer(str0, str1);
 //		long endTime = System.currentTimeMillis();
-//		System.out.p
+//		System.out.println("程序执行时间"+(long)(endTime - startTime));
+		
+		
+		@SuppressWarnings("resource")
+		//Sca
