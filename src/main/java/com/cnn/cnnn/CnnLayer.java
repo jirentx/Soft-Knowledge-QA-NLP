@@ -36,4 +36,6 @@ public class CnnLayer {
 		
 		
 		@SuppressWarnings("resource")
-		//Sca
+		//Scanner sc = new Scanner(System.in);
+		//String input = sc.nextLine();
+		String input = "在小区里养
