@@ -40,4 +40,7 @@ public class CnnLayer {
 		//String input = sc.nextLine();
 		String input = "在小区里养鸡的是什么心态跟谁投诉";
 //		float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
-//		System.err.prin
+//		System.err.println(a);
+		File file = new File("D:/NLP/法律-原始文档.txt");
+		String encoding = "utf-8";
+		if (file.isFile() 
