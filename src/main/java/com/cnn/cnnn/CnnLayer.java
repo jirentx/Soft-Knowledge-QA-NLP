@@ -43,4 +43,6 @@ public class CnnLayer {
 //		System.err.println(a);
 		File file = new File("D:/NLP/法律-原始文档.txt");
 		String encoding = "utf-8";
-		if (file.isFile() 
+		if (file.isFile() && file.exists()) {
+			//float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
+			HashMap<String , F
