@@ -47,4 +47,5 @@ public class CnnLayer {
 			//float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
 			HashMap<String , Float> score = new HashMap<String, Float>();
 			
-			InputStreamReader read = new InputStreamReader(ne
+			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到编码格式
+			BufferedReader bufferedReader = new Buffer
