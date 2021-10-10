@@ -45,4 +45,6 @@ public class CnnLayer {
 		String encoding = "utf-8";
 		if (file.isFile() && file.exists()) {
 			//float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
-			HashMap<String , F
+			HashMap<String , Float> score = new HashMap<String, Float>();
+			
+			InputStreamReader read = new InputStreamReader(ne
