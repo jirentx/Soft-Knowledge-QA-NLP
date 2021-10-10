@@ -48,4 +48,8 @@ public class CnnLayer {
 			HashMap<String , Float> score = new HashMap<String, Float>();
 			
 			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到编码格式
-			BufferedReader bufferedReader = new Buffer
+			BufferedReader bufferedReader = new BufferedReader(read);
+			String lineTxt = null;
+			float sco = 0;
+			int flag = 0;
+			while
