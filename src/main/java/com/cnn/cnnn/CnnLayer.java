@@ -52,4 +52,5 @@ public class CnnLayer {
 			String lineTxt = null;
 			float sco = 0;
 			int flag = 0;
-			while
+			while ((lineTxt = bufferedReader.readLine()) != null) {		
+				sco = mainLayer("我看电影看了八十块钱", "那场电影要看我八十
