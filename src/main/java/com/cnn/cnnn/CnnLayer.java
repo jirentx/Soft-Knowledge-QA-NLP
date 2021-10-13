@@ -58,4 +58,8 @@ public class CnnLayer {
 				flag++;
 			}
 			read.close();	
-			System.err.println("句
+			System.err.println("句子相似度为：" + score);
+			float a = score.get("在小区里养鸡的是什么心态跟谁投诉");
+			System.err.println(a);
+		} else {
+	
