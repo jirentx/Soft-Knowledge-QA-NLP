@@ -74,4 +74,6 @@ public class CnnLayer {
 	 * @param cnn
 	 * @throws IOException
 	 */
-	public static void inputLayer(Cnn cnn
+	public static void inputLayer(Cnn cnn) throws IOException {
+		Word2VEC vec = new Word2VEC();
+		//vec.loadJavaModel("D:/N
