@@ -70,4 +70,8 @@ public class CnnLayer {
 	/**
 	 * @author 朱宏
 	 * @description：cnn数据输入层
-	 * 2
+	 * 2019年3月25日
+	 * @param cnn
+	 * @throws IOException
+	 */
+	public static void inputLayer(Cnn cnn
