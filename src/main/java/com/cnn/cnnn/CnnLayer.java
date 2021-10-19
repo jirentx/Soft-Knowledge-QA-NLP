@@ -62,4 +62,12 @@ public class CnnLayer {
 			float a = score.get("在小区里养鸡的是什么心态跟谁投诉");
 			System.err.println(a);
 		} else {
+			System.out.println("执行异常");
+		}
+		
+	}
 	
+	/**
+	 * @author 朱宏
+	 * @description：cnn数据输入层
+	 * 2
