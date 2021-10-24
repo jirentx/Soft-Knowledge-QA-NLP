@@ -76,4 +76,6 @@ public class CnnLayer {
 	 */
 	public static void inputLayer(Cnn cnn) throws IOException {
 		Word2VEC vec = new Word2VEC();
-		//vec.loadJavaModel("D:/N
+		//vec.loadJavaModel("D:/NLP/法律-分词model.txt");
+		vec.loadJavaModel("D:/NLP/精准度测试集model2.txt");
+		List<S
