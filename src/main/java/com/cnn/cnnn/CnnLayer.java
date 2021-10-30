@@ -81,4 +81,6 @@ public class CnnLayer {
 		List<String> str0CW = CnnUtils.jiebaList(cnn.getInputString());
 		List<String> str1CW = CnnUtils.jiebaList(cnn.getTextString());
 		ArrayList<Float> scorerow = null;
-		List<ArrayList<Float>>
+		List<ArrayList<Float>> scoreCol = new ArrayList<ArrayList<Float>>();
+		for (int i = 0; i < str0CW.size(); i++) {
+			scorerow = 
