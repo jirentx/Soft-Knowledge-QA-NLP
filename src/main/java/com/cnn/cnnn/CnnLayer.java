@@ -78,4 +78,5 @@ public class CnnLayer {
 		Word2VEC vec = new Word2VEC();
 		//vec.loadJavaModel("D:/NLP/法律-分词model.txt");
 		vec.loadJavaModel("D:/NLP/精准度测试集model2.txt");
-		List<S
+		List<String> str0CW = CnnUtils.jiebaList(cnn.getInputString());
+		List<String> str1CW = CnnUtils.j
