@@ -79,4 +79,6 @@ public class CnnLayer {
 		//vec.loadJavaModel("D:/NLP/法律-分词model.txt");
 		vec.loadJavaModel("D:/NLP/精准度测试集model2.txt");
 		List<String> str0CW = CnnUtils.jiebaList(cnn.getInputString());
-		List<String> str1CW = CnnUtils.j
+		List<String> str1CW = CnnUtils.jiebaList(cnn.getTextString());
+		ArrayList<Float> scorerow = null;
+		List<ArrayList<Float>>
