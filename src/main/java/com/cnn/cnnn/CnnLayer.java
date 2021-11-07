@@ -85,4 +85,7 @@ public class CnnLayer {
 		for (int i = 0; i < str0CW.size(); i++) {
 			scorerow = new ArrayList<Float>();
 			for (int j = 0; j < str1CW.size(); j++) {				
-				f
+				float score = vec.wordDis(str0CW.get(i),str1CW.get(j));
+				scorerow.add(score);
+			}
+			
