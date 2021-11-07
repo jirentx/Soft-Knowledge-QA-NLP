@@ -83,4 +83,6 @@ public class CnnLayer {
 		ArrayList<Float> scorerow = null;
 		List<ArrayList<Float>> scoreCol = new ArrayList<ArrayList<Float>>();
 		for (int i = 0; i < str0CW.size(); i++) {
-			scorerow = 
+			scorerow = new ArrayList<Float>();
+			for (int j = 0; j < str1CW.size(); j++) {				
+				f
