@@ -88,4 +88,11 @@ public class CnnLayer {
 				float score = vec.wordDis(str0CW.get(i),str1CW.get(j));
 				scorerow.add(score);
 			}
-			
+			scoreCol.add(scorerow);
+		}
+		cnn.setCnnDataList(scoreCol);
+	}
+	
+	/**
+	 * @author 朱宏
+	 * @description：
