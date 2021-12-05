@@ -95,4 +95,8 @@ public class CnnLayer {
 	
 	/**
 	 * @author 朱宏
-	 * @description：
+	 * @description：双核卷积层
+	 * 2019年3月25日
+	 * @param cnn
+	 */
+	public static void convolutionLayer2 (Cnn cnn)
