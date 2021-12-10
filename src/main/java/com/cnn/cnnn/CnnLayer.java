@@ -99,4 +99,6 @@ public class CnnLayer {
 	 * 2019年3月25日
 	 * @param cnn
 	 */
-	public static void convolutionLayer2 (Cnn cnn)
+	public static void convolutionLayer2 (Cnn cnn) {
+		List<ArrayList<Float>> nextCnnList = new ArrayList<ArrayList<Float>>();
+		int k 
