@@ -101,4 +101,6 @@ public class CnnLayer {
 	 */
 	public static void convolutionLayer2 (Cnn cnn) {
 		List<ArrayList<Float>> nextCnnList = new ArrayList<ArrayList<Float>>();
-		int k 
+		int k = 0;
+		for (int i = 0; i < cnn.getCnnDataList().size()-1; i++) {
+			ArrayList<Float> nextCnnData 
