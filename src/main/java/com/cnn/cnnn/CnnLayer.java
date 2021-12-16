@@ -106,4 +106,5 @@ public class CnnLayer {
 			ArrayList<Float> nextCnnData = new ArrayList<Float>();
 			for (int j = 0; j < cnn.getCnnDataList().get(0).size()-1; j++) {
 				float convoNum0 = cnn.getCnnDataList().get(i).get(j) * cnn.getFilterList().get(k).get(k);
-				float convoNum1 = cnn.getCnnDataList().get(i).get(j+1) * cnn.getFilterList().get
+				float convoNum1 = cnn.getCnnDataList().get(i).get(j+1) * cnn.getFilterList().get(k).get(k+1);
+				float convoNum2 = cnn.getCnnDataList().get(i+1).get(j) * cnn.getF
