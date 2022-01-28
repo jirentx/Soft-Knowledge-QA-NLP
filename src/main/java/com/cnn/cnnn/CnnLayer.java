@@ -114,4 +114,10 @@ public class CnnLayer {
 			}
 			nextCnnList.add(nextCnnData);
 		}
-		cnn.s
+		cnn.setCnnDataList(nextCnnList);
+	}
+	
+	/**
+	 * @author 朱宏
+	 * @description：三核卷积层
+	 * 2019
