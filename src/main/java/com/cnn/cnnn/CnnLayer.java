@@ -120,4 +120,8 @@ public class CnnLayer {
 	/**
 	 * @author 朱宏
 	 * @description：三核卷积层
-	 * 2019
+	 * 2019年3月25日
+	 * @param cnn
+	 */
+	public static void convolutionLayer3 (Cnn cnn) {
+		List<
