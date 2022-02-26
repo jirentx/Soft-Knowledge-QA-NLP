@@ -124,4 +124,6 @@ public class CnnLayer {
 	 * @param cnn
 	 */
 	public static void convolutionLayer3 (Cnn cnn) {
-		List<
+		List<ArrayList<Float>> nextCnnList = new ArrayList<ArrayList<Float>>();
+		int k = 0;
+		for (int i = 
