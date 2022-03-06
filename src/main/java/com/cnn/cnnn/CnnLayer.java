@@ -127,4 +127,6 @@ public class CnnLayer {
 		List<ArrayList<Float>> nextCnnList = new ArrayList<ArrayList<Float>>();
 		int k = 0;
 		for (int i = 0; i < cnn.getCnnDataList().size()-1; i++) {
-			ArrayList<Float> nextCnnData = new ArrayList<Float>(
+			ArrayList<Float> nextCnnData = new ArrayList<Float>();
+			for (int j = 0; j < cnn.getCnnDataList().get(0).size()-1; j++) {
+	
