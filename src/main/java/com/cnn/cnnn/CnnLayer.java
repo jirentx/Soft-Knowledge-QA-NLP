@@ -138,4 +138,7 @@ public class CnnLayer {
 				float convoNum6 = cnn.getCnnDataList().get(i+2).get(j) * cnn.getFilterList().get(k+2).get(k);
 				float convoNum7 = cnn.getCnnDataList().get(i+2).get(j+1) * cnn.getFilterList().get(k+2).get(k+1);
 				float convoNum8 = cnn.getCnnDataList().get(i+2).get(j+2) * cnn.getFilterList().get(k+2).get(k+2);
-				float convoNumTotal = (convoNum0 + convoNum1 + convoNum2 + convoNum3 + convoNum4 + convoNum5 + co
+				float convoNumTotal = (convoNum0 + convoNum1 + convoNum2 + convoNum3 + convoNum4 + convoNum5 + convoNum6 + convoNum7 + convoNum8)/9;
+				nextCnnData.add(convoNumTotal);
+			}
+			
