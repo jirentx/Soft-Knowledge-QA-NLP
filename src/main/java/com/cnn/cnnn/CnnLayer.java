@@ -141,4 +141,10 @@ public class CnnLayer {
 				float convoNumTotal = (convoNum0 + convoNum1 + convoNum2 + convoNum3 + convoNum4 + convoNum5 + convoNum6 + convoNum7 + convoNum8)/9;
 				nextCnnData.add(convoNumTotal);
 			}
-			
+			nextCnnList.add(nextCnnData);
+		}
+		cnn.setCnnDataList(nextCnnList);
+	}
+	
+	/**
+	 * @aut
