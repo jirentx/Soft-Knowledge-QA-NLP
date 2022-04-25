@@ -147,4 +147,9 @@ public class CnnLayer {
 	}
 	
 	/**
-	 * @aut
+	 * @author 朱宏
+	 * @description：双核池化层
+	 * 2019年3月25日
+	 * @param cnn
+	 */
+	public static void 
