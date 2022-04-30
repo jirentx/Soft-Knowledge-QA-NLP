@@ -152,4 +152,5 @@ public class CnnLayer {
 	 * 2019年3月25日
 	 * @param cnn
 	 */
-	public static void 
+	public static void poolingLayer2(Cnn cnn) {
+		List<ArrayList<Float>> nextCnnList = new ArrayList<ArrayList<Float>>();
