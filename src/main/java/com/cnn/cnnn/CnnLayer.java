@@ -172,4 +172,9 @@ public class CnnLayer {
 				if(convoNum2 >= convoNum3) {
 					max1 = convoNum2;
 				} else {
-					max1 = con
+					max1 = convoNum3;
+				}
+				if (max0 >= max1) {
+					convoNumTotal = max0;
+				} else {
+					convoNumTotal = max
