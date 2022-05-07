@@ -163,4 +163,8 @@ public class CnnLayer {
 				float convoNum3 = cnn.getCnnDataList().get(i+1).get(j+1);
 				float max0 = -1;
 				float max1 = -1;
-				float convoNum
+				float convoNumTotal = -1;
+				if (convoNum0 >= convoNum1) {
+					max0 = convoNum0;
+				}else {
+					max0 = c
