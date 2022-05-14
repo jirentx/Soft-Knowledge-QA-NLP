@@ -177,4 +177,9 @@ public class CnnLayer {
 				if (max0 >= max1) {
 					convoNumTotal = max0;
 				} else {
-					convoNumTotal = max
+					convoNumTotal = max1;
+				}
+				nextCnnData.add(convoNumTotal);
+			}
+			nextCnnList.add(nextCnnData);
+		}
