@@ -190,4 +190,7 @@ public class CnnLayer {
 	 * @author 朱宏
 	 * @description：三核池化层
 	 * 2019年3月25日
-	 * @param c
+	 * @param cnn
+	 */
+	public static void poolingLayer3 (Cnn cnn) {
+		List<ArrayList<Float>> nextCnnL
