@@ -193,4 +193,5 @@ public class CnnLayer {
 	 * @param cnn
 	 */
 	public static void poolingLayer3 (Cnn cnn) {
-		List<ArrayList<Float>> nextCnnL
+		List<ArrayList<Float>> nextCnnList = new ArrayList<ArrayList<Float>>();
+		for (int i = 0; i < cnn.getCnnDataList().size()-1;
