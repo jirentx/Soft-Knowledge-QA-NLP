@@ -205,4 +205,5 @@ public class CnnLayer {
 				float convoNum5 = cnn.getCnnDataList().get(i+1).get(j+2);
 				float convoNum6 = cnn.getCnnDataList().get(i+2).get(j);
 				float convoNum7 = cnn.getCnnDataList().get(i+2).get(j+1);
-				float convo
+				float convoNum8 = cnn.getCnnDataList().get(i+2).get(j+2);
+				float num0 = compareThreeNum(convoNum0,con
