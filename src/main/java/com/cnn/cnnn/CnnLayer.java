@@ -212,4 +212,11 @@ public class CnnLayer {
 				float convoNumTotal = compareThreeNum(num0,num1,num2);
 				nextCnnData.add(convoNumTotal);
 			}
-			nextCnnList.a
+			nextCnnList.add(nextCnnData);
+		}
+		cnn.setCnnDataList(nextCnnList);
+	}
+	
+	/**
+	 * @author 朱宏
+	 *
