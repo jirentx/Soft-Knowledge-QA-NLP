@@ -224,3 +224,6 @@ public class CnnLayer {
 	 * @param a
 	 * @param b
 	 * @param c
+	 * @return
+	 */
+	public static float compareThreeNum(float a, float b, float c)
