@@ -209,4 +209,7 @@ public class CnnLayer {
 				float num0 = compareThreeNum(convoNum0,convoNum1,convoNum2);
 				float num1 = compareThreeNum(convoNum3,convoNum4,convoNum5);
 				float num2 = compareThreeNum(convoNum6,convoNum7,convoNum8);
-				float convoNumTotal = c
+				float convoNumTotal = compareThreeNum(num0,num1,num2);
+				nextCnnData.add(convoNumTotal);
+			}
+			nextCnnList.a
