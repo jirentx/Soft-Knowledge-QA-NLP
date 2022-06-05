@@ -219,4 +219,8 @@ public class CnnLayer {
 	
 	/**
 	 * @author 朱宏
-	 *
+	 * @description：类静态公用方法：取出三个数中的最大值
+	 * 2019年3月25日
+	 * @param a
+	 * @param b
+	 * @param c
