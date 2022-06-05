@@ -226,4 +226,11 @@ public class CnnLayer {
 	 * @param c
 	 * @return
 	 */
-	public static float compareThreeNum(float a, float b, float c)
+	public static float compareThreeNum(float a, float b, float c) {
+		float max = -1;
+		if (a >= b) {
+			max= a;
+		} else {
+			max = b;
+		} 
+		if (c >= m
