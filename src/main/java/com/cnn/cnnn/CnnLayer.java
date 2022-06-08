@@ -233,4 +233,13 @@ public class CnnLayer {
 		} else {
 			max = b;
 		} 
-		if (c >= m
+		if (c >= max) {
+			max = c;
+		}
+		return max;
+	}
+	
+	/**
+	 * @author 朱宏
+	 * @description：CNN的分类连接层
+	 * 2019年4
