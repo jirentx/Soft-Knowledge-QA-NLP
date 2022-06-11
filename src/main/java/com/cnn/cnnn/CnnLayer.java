@@ -242,4 +242,7 @@ public class CnnLayer {
 	/**
 	 * @author 朱宏
 	 * @description：CNN的分类连接层
-	 * 2019年4
+	 * 2019年4月8日
+	 * @throws IOException
+	 */
+	public static float mainLayer(String str0, String str1) throws IO
