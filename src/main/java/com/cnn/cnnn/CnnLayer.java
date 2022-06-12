@@ -249,4 +249,7 @@ public class CnnLayer {
 		float scor = 0;
 		Cnn cnn = new Cnn();
 		cnn.setInputString(str0);
-		cnn.setTextString(str1)
+		cnn.setTextString(str1);
+		inputLayer(cnn);
+		RELU.reluFunc(cnn);
+		List<ArrayList<Float>> filterInit = n
