@@ -245,4 +245,8 @@ public class CnnLayer {
 	 * 2019年4月8日
 	 * @throws IOException
 	 */
-	public static float mainLayer(String str0, String str1) throws IO
+	public static float mainLayer(String str0, String str1) throws IOException {
+		float scor = 0;
+		Cnn cnn = new Cnn();
+		cnn.setInputString(str0);
+		cnn.setTextString(str1)
