@@ -255,4 +255,6 @@ public class CnnLayer {
 		List<ArrayList<Float>> filterInit = new ArrayList<ArrayList<Float>>();
 		List<Float> dataList = new ArrayList<Float>();
 		dataList.add((float) 1);
-		d
+		dataList.add((float) 1);
+		filterInit.add((ArrayList<Float>) dataList);
+		filterInit.add(
