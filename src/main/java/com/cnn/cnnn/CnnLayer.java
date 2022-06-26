@@ -264,4 +264,9 @@ public class CnnLayer {
 			if(cnn.getCnnDataList().size() <= 2 || cnn.getCnnDataList().get(0).size() <= 2){
 				break;
 			}
-			if (cnnNomalNum[0] <= 0.05) 
+			if (cnnNomalNum[0] <= 0.05) {
+				scor = cnnNomalNum[1];
+				break;
+			}
+			poolingLayer2(cnn);
+			poolingLayer2(cnn);
