@@ -4,4 +4,10 @@ import com.cnn.entity.Cnn;
 
 /**
  * @author 朱宏
- * @d
+ * @description：Cnn正则化类
+ * 2019年3月28日
+ */
+public class CnnNomalization {
+	/**
+	 * @author 朱宏
+	 * @
