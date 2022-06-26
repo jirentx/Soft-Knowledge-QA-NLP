@@ -270,3 +270,8 @@ public class CnnLayer {
 			}
 			poolingLayer2(cnn);
 			poolingLayer2(cnn);
+			poolingLayer2(cnn);
+			convolutionLayer2(cnn);
+			scor = cnnNomalNum[1];
+		}
+		ret
