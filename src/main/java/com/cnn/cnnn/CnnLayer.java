@@ -261,4 +261,7 @@ public class CnnLayer {
 		cnn.setFilterList(filterInit);
 		while (true) {
 			float[] cnnNomalNum = CnnNomalization.standardDeviation(cnn);
-			if(cnn.getCnnDataList().size() <= 2 || 
+			if(cnn.getCnnDataList().size() <= 2 || cnn.getCnnDataList().get(0).size() <= 2){
+				break;
+			}
+			if (cnnNomalNum[0] <= 0.05) 
