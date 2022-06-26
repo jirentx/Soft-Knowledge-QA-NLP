@@ -274,4 +274,8 @@ public class CnnLayer {
 			convolutionLayer2(cnn);
 			scor = cnnNomalNum[1];
 		}
-		ret
+		return scor;
+	}
+	
+}
+
