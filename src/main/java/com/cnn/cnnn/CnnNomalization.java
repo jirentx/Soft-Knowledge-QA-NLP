@@ -10,4 +10,8 @@ import com.cnn.entity.Cnn;
 public class CnnNomalization {
 	/**
 	 * @author 朱宏
-	 * @
+	 * @description：标准差正则化
+	 * 2019年3月28日
+	 * @param cnn
+	 */
+	public static float[] standar
