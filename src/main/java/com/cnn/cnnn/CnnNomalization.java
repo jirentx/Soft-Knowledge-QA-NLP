@@ -16,4 +16,8 @@ public class CnnNomalization {
 	 */
 	public static float[] standardDeviation(Cnn cnn) {
 		int listSize = cnn.getCnnDataList().size();
-		int listSizeGet0 = cnn.getCnnData
+		int listSizeGet0 = cnn.getCnnDataList().get(0).size();
+		float totalScore = 0;
+		float avgScore = 0;
+		float standardDev = 0;
+		float s
