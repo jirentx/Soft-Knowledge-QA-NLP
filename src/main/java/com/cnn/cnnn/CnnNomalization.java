@@ -14,4 +14,6 @@ public class CnnNomalization {
 	 * 2019年3月28日
 	 * @param cnn
 	 */
-	public static float[] standar
+	public static float[] standardDeviation(Cnn cnn) {
+		int listSize = cnn.getCnnDataList().size();
+		int listSizeGet0 = cnn.getCnnData
