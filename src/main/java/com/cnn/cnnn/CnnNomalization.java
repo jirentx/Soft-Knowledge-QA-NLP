@@ -20,4 +20,7 @@ public class CnnNomalization {
 		float totalScore = 0;
 		float avgScore = 0;
 		float standardDev = 0;
-		float s
+		float sqrtDev = 0;
+		int cycleTime = 0;
+		for (int i = 0; i < listSize; i++) {
+			for (int j 
