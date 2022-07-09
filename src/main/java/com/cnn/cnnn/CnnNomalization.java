@@ -23,4 +23,5 @@ public class CnnNomalization {
 		float sqrtDev = 0;
 		int cycleTime = 0;
 		for (int i = 0; i < listSize; i++) {
-			for (int j 
+			for (int j = 0; j < listSizeGet0; j++) {
+				totalScore = totalScore + cnn.getCnnDataList().get(i
