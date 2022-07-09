@@ -24,4 +24,8 @@ public class CnnNomalization {
 		int cycleTime = 0;
 		for (int i = 0; i < listSize; i++) {
 			for (int j = 0; j < listSizeGet0; j++) {
-				totalScore = totalScore + cnn.getCnnDataList().get(i
+				totalScore = totalScore + cnn.getCnnDataList().get(i).get(j);
+				cycleTime  = cycleTime + 1;
+			}
+		}
+		avgScore = totalScore / cycl
