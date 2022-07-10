@@ -31,3 +31,6 @@ public class CnnNomalization {
 		avgScore = totalScore / cycleTime;
 		for (int i = 0; i < listSize; i++) {
 			for (int j = 0; j < listSizeGet0; j++) {
+				sqrtDev = (float) Math.pow(cnn.getCnnDataList().get(i).get(j) - avgScore, 2);
+			}
+	
