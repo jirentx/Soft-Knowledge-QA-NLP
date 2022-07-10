@@ -28,4 +28,6 @@ public class CnnNomalization {
 				cycleTime  = cycleTime + 1;
 			}
 		}
-		avgScore = totalScore / cycl
+		avgScore = totalScore / cycleTime;
+		for (int i = 0; i < listSize; i++) {
+			for (int j = 0; j < listSizeGet0; j++) {
