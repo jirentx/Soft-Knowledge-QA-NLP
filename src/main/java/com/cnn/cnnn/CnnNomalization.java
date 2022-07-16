@@ -33,4 +33,7 @@ public class CnnNomalization {
 			for (int j = 0; j < listSizeGet0; j++) {
 				sqrtDev = (float) Math.pow(cnn.getCnnDataList().get(i).get(j) - avgScore, 2);
 			}
-	
+		}
+		standardDev = (float) Math.sqrt(sqrtDev);
+		float[] arr = new float[2];	
+		arr[0] 
