@@ -36,4 +36,8 @@ public class CnnNomalization {
 		}
 		standardDev = (float) Math.sqrt(sqrtDev);
 		float[] arr = new float[2];	
-		arr[0] 
+		arr[0] = standardDev;
+		arr[1] = avgScore; 
+		return arr;
+	}
+}
