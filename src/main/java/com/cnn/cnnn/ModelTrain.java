@@ -16,4 +16,6 @@ import java.util.List;
  */
 public class ModelTrain {
 public static void main(String[] args) throws IOException {
-	File fil
+	File file = new File("D:/NLP/精准度测试集1.txt");
+	String encoding = "utf-8";
+	if (file.isFile() && file.exist
