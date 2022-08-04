@@ -18,4 +18,6 @@ public class ModelTrain {
 public static void main(String[] args) throws IOException {
 	File file = new File("D:/NLP/精准度测试集1.txt");
 	String encoding = "utf-8";
-	if (file.isFile() && file.exist
+	if (file.isFile() && file.exists()) {
+		//float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
+		List<Float> score = new ArrayList<Flo
