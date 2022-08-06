@@ -29,4 +29,7 @@ public static void main(String[] args) throws IOException {
 		int flag = 0;
 		while ((lineTxt = bufferedReader.readLine()) != null) {	
 			String[] textArr = lineTxt.split(" ");
-		
+			try {
+				sco = CnnLayer.mainLayer(textArr[0], textArr[1]);
+			} catch (Exception e) {
+				contin
