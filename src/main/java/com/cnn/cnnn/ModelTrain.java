@@ -20,4 +20,6 @@ public static void main(String[] args) throws IOException {
 	String encoding = "utf-8";
 	if (file.isFile() && file.exists()) {
 		//float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
-		List<Float> score = new ArrayList<Flo
+		List<Float> score = new ArrayList<Float>();
+		List<Float> score1 = new ArrayList<Float>();
+		InputStreamReader read = new InputStreamR
