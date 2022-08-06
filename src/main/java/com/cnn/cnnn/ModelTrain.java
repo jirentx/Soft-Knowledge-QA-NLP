@@ -27,4 +27,6 @@ public static void main(String[] args) throws IOException {
 		String lineTxt = null;
 		float sco = 0;
 		int flag = 0;
-		while ((l
+		while ((lineTxt = bufferedReader.readLine()) != null) {	
+			String[] textArr = lineTxt.split(" ");
+		
