@@ -22,4 +22,5 @@ public static void main(String[] args) throws IOException {
 		//float a  = mainLayer(input, "在小区里养鸡的是什么心态跟谁投诉");
 		List<Float> score = new ArrayList<Float>();
 		List<Float> score1 = new ArrayList<Float>();
-		InputStreamReader read = new InputStreamR
+		InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到编码格式
+		BufferedReader bufferedReader = 
