@@ -23,4 +23,8 @@ public static void main(String[] args) throws IOException {
 		List<Float> score = new ArrayList<Float>();
 		List<Float> score1 = new ArrayList<Float>();
 		InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到编码格式
-		BufferedReader bufferedReader = 
+		BufferedReader bufferedReader = new BufferedReader(read);
+		String lineTxt = null;
+		float sco = 0;
+		int flag = 0;
+		while ((l
