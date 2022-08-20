@@ -32,4 +32,11 @@ public static void main(String[] args) throws IOException {
 			try {
 				sco = CnnLayer.mainLayer(textArr[0], textArr[1]);
 			} catch (Exception e) {
-				contin
+				continue;
+			}
+
+			score.add(sco);
+			flag++;
+		}
+		read.close();	
+		System.err.println("句子相似度为：" + sco
