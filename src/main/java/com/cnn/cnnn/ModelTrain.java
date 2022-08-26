@@ -39,4 +39,8 @@ public static void main(String[] args) throws IOException {
 			flag++;
 		}
 		read.close();	
-		System.err.println("句子相似度为：" + sco
+		System.err.println("句子相似度为：" + score);
+		for (int i = 0; i < score.size(); i++) {
+			if (score.get(i) == 0.0) {
+				score.remove(i);
+			}
