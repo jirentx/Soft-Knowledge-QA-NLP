@@ -44,3 +44,8 @@ public static void main(String[] args) throws IOException {
 			if (score.get(i) == 0.0) {
 				score.remove(i);
 			}
+			if (score.get(i)>0.4) {
+				score1.add(score.get(i));
+			}
+		}
+		System.
