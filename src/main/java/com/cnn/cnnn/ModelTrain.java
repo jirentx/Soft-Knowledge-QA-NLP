@@ -48,4 +48,6 @@ public static void main(String[] args) throws IOException {
 				score1.add(score.get(i));
 			}
 		}
-		System.
+		System.err.println("测试集总数："+score.size());
+		System.err.println("相似度总数："+score1.size());
+		Float a =(floa
