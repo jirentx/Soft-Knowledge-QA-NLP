@@ -53,4 +53,7 @@ public static void main(String[] args) throws IOException {
 		Float a =(float)487/(float)659;
 		System.err.println("模型精准度："+a);
 	} else {
-		System.out.println("执行异
+		System.out.println("执行异常");
+	}
+}
+}
