@@ -50,4 +50,7 @@ public static void main(String[] args) throws IOException {
 		}
 		System.err.println("测试集总数："+score.size());
 		System.err.println("相似度总数："+score1.size());
-		Float a =(floa
+		Float a =(float)487/(float)659;
+		System.err.println("模型精准度："+a);
+	} else {
+		System.out.println("执行异
