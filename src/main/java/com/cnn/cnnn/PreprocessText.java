@@ -14,4 +14,10 @@ import com.cnn.utils.CnnUtils;
 
 public class PreprocessText {
 	public static void main(String[] args) throws IOException {
-		preProcessText("D:/NLP/精准度测试集1.txt", "D:/NLP/精准度测试集1-分词.txt
+		preProcessText("D:/NLP/精准度测试集1.txt", "D:/NLP/精准度测试集1-分词.txt", "UTF-8");
+	}
+	/**
+	 * @description 文本预处理：朱宏
+	 * @throws IOException
+	 */
+	public static void
