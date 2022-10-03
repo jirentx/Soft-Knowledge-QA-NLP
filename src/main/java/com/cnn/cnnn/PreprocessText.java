@@ -20,4 +20,5 @@ public class PreprocessText {
 	 * @description 文本预处理：朱宏
 	 * @throws IOException
 	 */
-	public static void
+	public static void preProcessText(String fileRead, String fileWrite, String encoding) throws IOException {
+		
