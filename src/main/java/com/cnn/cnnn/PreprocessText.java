@@ -23,4 +23,5 @@ public class PreprocessText {
 	public static void preProcessText(String fileRead, String fileWrite, String encoding) throws IOException {
 		File file = new File(fileRead);
 		File file1 = new File(fileWrite);
-		if (file.isFile() && file.exi
+		if (file.isFile() && file.exists()) {
+			OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file1),e
