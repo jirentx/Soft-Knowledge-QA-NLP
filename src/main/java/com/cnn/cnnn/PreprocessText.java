@@ -24,4 +24,5 @@ public class PreprocessText {
 		File file = new File(fileRead);
 		File file1 = new File(fileWrite);
 		if (file.isFile() && file.exists()) {
-			OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file1),e
+			OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file1),encoding);
+			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到
