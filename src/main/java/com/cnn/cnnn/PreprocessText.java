@@ -25,4 +25,6 @@ public class PreprocessText {
 		File file1 = new File(fileWrite);
 		if (file.isFile() && file.exists()) {
 			OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file1),encoding);
-			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到
+			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到编码格式
+			BufferedReader bufferedReader = new BufferedReader(read);
+			BufferedWriter bufferedWriter
