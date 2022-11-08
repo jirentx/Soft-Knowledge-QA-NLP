@@ -27,4 +27,6 @@ public class PreprocessText {
 			OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file1),encoding);
 			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);//考虑到编码格式
 			BufferedReader bufferedReader = new BufferedReader(read);
-			BufferedWriter bufferedWriter
+			BufferedWriter bufferedWriter = new BufferedWriter(writer);
+			String lineTxt = null;
+			while ((lineTxt = bufferedReader.read
