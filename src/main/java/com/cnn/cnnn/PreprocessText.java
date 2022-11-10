@@ -29,4 +29,7 @@ public class PreprocessText {
 			BufferedReader bufferedReader = new BufferedReader(read);
 			BufferedWriter bufferedWriter = new BufferedWriter(writer);
 			String lineTxt = null;
-			while ((lineTxt = bufferedReader.read
+			while ((lineTxt = bufferedReader.readLine()) != null) {
+				bufferedWriter.write(CnnUtils.jiebaStr(lineTxt));
+			}
+			writer.flush();
