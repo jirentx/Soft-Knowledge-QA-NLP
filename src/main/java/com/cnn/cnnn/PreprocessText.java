@@ -37,4 +37,8 @@ public class PreprocessText {
 			read.close();
 			System.out.println("文件分词成功");
 		} else {
-			System.out.println("找不到指定的文件")
+			System.out.println("找不到指定的文件");
+			return;
+		}
+	}
+}
