@@ -9,4 +9,6 @@ import com.cnn.entity.Cnn;
  */
 public class RELU {
 	public static void  reluFunc(Cnn cnn) {
-		int co
+		int cols = cnn.getCnnDataList().size();
+		int rows = cnn.getCnnDataList().get(0).size();
+		for (in
