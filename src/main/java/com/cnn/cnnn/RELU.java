@@ -11,4 +11,6 @@ public class RELU {
 	public static void  reluFunc(Cnn cnn) {
 		int cols = cnn.getCnnDataList().size();
 		int rows = cnn.getCnnDataList().get(0).size();
-		for (in
+		for (int i = 0; i < cols; i++) {
+			for (int j = 0; j < rows; j++) {
+				if (cnn.getCnnData
