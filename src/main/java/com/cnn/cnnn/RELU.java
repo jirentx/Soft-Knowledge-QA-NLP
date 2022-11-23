@@ -13,4 +13,7 @@ public class RELU {
 		int rows = cnn.getCnnDataList().get(0).size();
 		for (int i = 0; i < cols; i++) {
 			for (int j = 0; j < rows; j++) {
-				if (cnn.getCnnData
+				if (cnn.getCnnDataList().get(i).get(j) < 0) {
+					cnn.getCnnDataList().get(i).set(j, (float) 0);
+				}
+		
