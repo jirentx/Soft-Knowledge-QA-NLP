@@ -16,4 +16,7 @@ public class RELU {
 				if (cnn.getCnnDataList().get(i).get(j) < 0) {
 					cnn.getCnnDataList().get(i).set(j, (float) 0);
 				}
-		
+			}
+		}
+	}
+}
