@@ -9,4 +9,7 @@ public class RobotTest {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		while (sc.hasNext()) {
-			System.out.println("小朱回复：" + SR.getMe
+			System.out.println("小朱回复：" + SR.getMessage(sc.nextLine())); 
+		}
+	}
+}
