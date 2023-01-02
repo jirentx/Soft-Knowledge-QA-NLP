@@ -10,4 +10,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 import org.json.JSONException;
-import org.jso
+import org.json.JSONObject;
+
+public class SmartRobot {
+	
+    public static final String API_KEY = "2d85bc5b70
