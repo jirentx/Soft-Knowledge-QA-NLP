@@ -14,4 +14,5 @@ import org.json.JSONObject;
 
 public class SmartRobot {
 	
-    public static final String API_KEY = "2d85bc5b70
+    public static final String API_KEY = "2d85bc5b705b4321b8beddc5eff1d8be";
+    public static final String API_URL = "http://www.tuli
