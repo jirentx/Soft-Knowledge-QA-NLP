@@ -20,4 +20,7 @@ public class SmartRobot {
     private String setParameter(String msg) {
         try {
             return API_URL + "?key=" + API_KEY + "&info=" + URLEncoder.encode(msg, "utf-8");
-       
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        ret
