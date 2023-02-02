@@ -23,4 +23,9 @@ public class SmartRobot {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        ret
+        return null;
+    }
+
+    private String getString(String json){
+        try {
+            JSONObject
