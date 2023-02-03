@@ -28,4 +28,6 @@ public class SmartRobot {
 
     private String getString(String json){
         try {
-            JSONObject
+            JSONObject object = new JSONObject(json);
+            return object.getString("text");
+        } c
