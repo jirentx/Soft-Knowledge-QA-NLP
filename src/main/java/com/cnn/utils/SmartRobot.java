@@ -30,4 +30,10 @@ public class SmartRobot {
         try {
             JSONObject object = new JSONObject(json);
             return object.getString("text");
-        } c
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
+    pu
