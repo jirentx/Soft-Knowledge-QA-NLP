@@ -43,4 +43,6 @@ public class SmartRobot {
 
     private String getHTML(String url) {
         StringBuffer buffer = new StringBuffer();
-        
+        BufferedReader bufferedReader = null;
+        try {
+            URL u = new URL(url);
