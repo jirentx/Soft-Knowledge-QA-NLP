@@ -36,4 +36,6 @@ public class SmartRobot {
         return null;
     }
     
-    pu
+    public String getMessage(String msg){
+        return getString(getHTML(setParameter(msg)));
+   
