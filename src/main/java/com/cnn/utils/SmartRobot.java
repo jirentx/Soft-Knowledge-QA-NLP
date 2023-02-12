@@ -38,4 +38,9 @@ public class SmartRobot {
     
     public String getMessage(String msg){
         return getString(getHTML(setParameter(msg)));
-   
+    }
+
+
+    private String getHTML(String url) {
+        StringBuffer buffer = new StringBuffer();
+        
