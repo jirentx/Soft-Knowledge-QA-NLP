@@ -48,4 +48,6 @@ public class SmartRobot {
             URL u = new URL(url);
             HttpURLConnection connection = (HttpURLConnection) u.openConnection();
             bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-  
+            String line = "";
+            while ((line = bufferedReader.readLine()) != null) {
+              
