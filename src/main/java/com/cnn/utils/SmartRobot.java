@@ -47,3 +47,5 @@ public class SmartRobot {
         try {
             URL u = new URL(url);
             HttpURLConnection connection = (HttpURLConnection) u.openConnection();
+            bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+  
