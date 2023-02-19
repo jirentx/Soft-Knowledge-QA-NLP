@@ -50,4 +50,7 @@ public class SmartRobot {
             bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String line = "";
             while ((line = bufferedReader.readLine()) != null) {
-              
+                buffer.append(line);
+            }
+        } catch (MalformedURLException e) {
+      
