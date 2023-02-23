@@ -53,4 +53,6 @@ public class SmartRobot {
                 buffer.append(line);
             }
         } catch (MalformedURLException e) {
-      
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrac
