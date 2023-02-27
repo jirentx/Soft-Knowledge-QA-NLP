@@ -55,4 +55,8 @@ public class SmartRobot {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrac
+            e.printStackTrace();
+        }finally {
+            try {
+                bufferedReader.close();
+            } cat
