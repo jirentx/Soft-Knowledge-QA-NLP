@@ -59,4 +59,7 @@ public class SmartRobot {
         }finally {
             try {
                 bufferedReader.close();
-            } cat
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+     
