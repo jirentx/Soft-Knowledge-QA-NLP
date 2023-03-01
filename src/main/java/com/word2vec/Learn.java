@@ -52,3 +52,91 @@ public class Learn {
   public Learn(Boolean isCbow, Integer layerSize, Integer window, Double alpha,
       Double sample) {
     createExpTable();
+    if (isCbow != null) {
+      this.isCbow = isCbow;
+    }
+    if (layerSize != null)
+      this.layerSize = layerSize;
+    if (window != null)
+      this.window = window;
+    if (alpha != null)
+      this.alpha = alpha;
+    if (sample != null)
+      this.sample = sample;
+  }
+
+  public Learn() {
+    createExpTable();
+  }
+
+  /**
+   * trainModel
+   * 
+   * @throws IOException
+   */
+  private void trainModel(File file) throws IOException {
+    try (BufferedReader br = new BufferedReader(new InputStreamReader(
+        new FileInputStream(file)))) {
+      String temp = null;
+      long nextRandom = 5;
+      int wordCount = 0;
+      int lastWordCount = 0;
+      int wordCountActual = 0;
+      while ((temp = br.readLine()) != null) {
+        if (wordCount - lastWordCount > 10000) {
+          System.out.println("alpha:" + alpha + "\tProgress: "
+              + (int) (wordCountActual / (double) (trainWordsCount + 1) * 100)
+              + "%");
+          wordCountActual += wordCount - lastWordCount;
+          lastWordCount = wordCount;
+          alpha = startingAlpha
+              * (1 - wordCountActual / (double) (trainWordsCount + 1));
+          if (alpha < startingAlpha * 0.0001) {
+            alpha = startingAlpha * 0.0001;
+          }
+        }
+        String[] strs = temp.split(" ");
+        wordCount += strs.length;
+        List<WordNeuron> sentence = new ArrayList<WordNeuron>();
+        for (int i = 0; i < strs.length; i++) {
+          Neuron entry = wordMap.get(strs[i]);
+          if (entry == null) {
+            continue;
+          }
+          // The subsampling randomly discards frequent words while keeping the
+          // ranking same
+          if (sample > 0) {
+            double ran = (Math.sqrt(entry.freq / (sample * trainWordsCount)) + 1)
+                * (sample * trainWordsCount) / entry.freq;
+            nextRandom = nextRandom * 25214903917L + 11;
+            if (ran < (nextRandom & 0xFFFF) / (double) 65536) {
+              continue;
+            }
+          }
+          sentence.add((WordNeuron) entry);
+        }
+
+        for (int index = 0; index < sentence.size(); index++) {
+          nextRandom = nextRandom * 25214903917L + 11;
+          if (isCbow) {
+            cbowGram(index, sentence, (int) nextRandom % window);
+          } else {
+            skipGram(index, sentence, (int) nextRandom % window);
+          }
+        }
+
+      }
+      System.out.println("Vocab size: " + wordMap.size());
+      System.out.println("Words in train file: " + trainWordsCount);
+      System.out.println("sucess train over!");
+    }
+  }
+
+  /**
+   * skip gram 模型训练
+   * 
+   * @param sentence
+   * @param neu1
+   */
+  private void skipGram(int index, List<WordNeuron> sentence, int b) {
+    // TODO Auto-generated method stub
