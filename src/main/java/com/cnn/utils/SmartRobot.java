@@ -62,4 +62,8 @@ public class SmartRobot {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-     
+        }
+        return buffer.toString();
+    }
+}
+
