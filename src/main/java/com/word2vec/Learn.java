@@ -228,3 +228,94 @@ public class Learn {
       if (f <= -MAX_EXP)
         continue;
       else if (f >= MAX_EXP)
+        continue;
+      else
+        f = expTable[(int) ((f + MAX_EXP) * (EXP_TABLE_SIZE / MAX_EXP / 2))];
+      // 'g' is the gradient multiplied by the learning rate
+      // double g = (1 - word.codeArr[d] - f) * alpha;
+      // double g = f*(1-f)*( word.codeArr[i] - f) * alpha;
+      double g = f * (1 - f) * (word.codeArr[d] - f) * alpha;
+      //
+      for (c = 0; c < layerSize; c++) {
+        neu1e[c] += g * out.syn1[c];
+      }
+      // Learn weights hidden -> output
+      for (c = 0; c < layerSize; c++) {
+        out.syn1[c] += g * neu1[c];
+      }
+    }
+    for (a = b; a < window * 2 + 1 - b; a++) {
+      if (a != window) {
+        c = index - window + a;
+        if (c < 0)
+          continue;
+        if (c >= sentence.size())
+          continue;
+        last_word = sentence.get(c);
+        if (last_word == null)
+          continue;
+        for (c = 0; c < layerSize; c++)
+          last_word.syn0[c] += neu1e[c];
+      }
+
+    }
+  }
+
+  /**
+   * 统计词频
+   * 
+   * @param file
+   * @throws IOException
+   */
+  private void readVocab(File file) throws IOException {
+    MapCount<String> mc = new MapCount<>();
+    try (BufferedReader br = new BufferedReader(new InputStreamReader(
+        new FileInputStream(file)))) {
+      String temp = null;
+      while ((temp = br.readLine()) != null) {
+        String[] split = temp.split(" ");
+        trainWordsCount += split.length;
+        for (String string : split) {
+          mc.add(string);
+        }
+      }
+    }
+    for (Entry<String, Integer> element : mc.get().entrySet()) {
+      wordMap.put(element.getKey(), new WordNeuron(element.getKey(),
+          (double) element.getValue() / mc.size(), layerSize));
+    }
+  }
+
+  /**
+   * 对文本进行预分类
+   * 
+   * @param files
+   * @throws IOException
+   * @throws FileNotFoundException
+   */
+  private void readVocabWithSupervised(File[] files) throws IOException {
+    for (int category = 0; category < files.length; category++) {
+      // 对多个文件学习
+      MapCount<String> mc = new MapCount<>();
+      try (BufferedReader br = new BufferedReader(new InputStreamReader(
+          new FileInputStream(files[category])))) {
+        String temp = null;
+        while ((temp = br.readLine()) != null) {
+          String[] split = temp.split(" ");
+          trainWordsCount += split.length;
+          for (String string : split) {
+            mc.add(string);
+          }
+        }
+      }
+      for (Entry<String, Integer> element : mc.get().entrySet()) {
+        double tarFreq = (double) element.getValue() / mc.size();
+        if (wordMap.get(element.getKey()) != null) {
+          double srcFreq = wordMap.get(element.getKey()).freq;
+          if (srcFreq >= tarFreq) {
+            continue;
+          } else {
+            Neuron wordNeuron = wordMap.get(element.getKey());
+            wordNeuron.category = category;
+            wordNeuron.freq = tarFreq;
+          }
