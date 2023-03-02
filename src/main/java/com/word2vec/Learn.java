@@ -140,3 +140,91 @@ public class Learn {
    */
   private void skipGram(int index, List<WordNeuron> sentence, int b) {
     // TODO Auto-generated method stub
+    WordNeuron word = sentence.get(index);
+    int a, c = 0;
+    for (a = b; a < window * 2 + 1 - b; a++) {
+      if (a == window) {
+        continue;
+      }
+      c = index - window + a;
+      if (c < 0 || c >= sentence.size()) {
+        continue;
+      }
+
+      double[] neu1e = new double[layerSize];// 误差项
+      // HIERARCHICAL SOFTMAX
+      List<Neuron> neurons = word.neurons;
+      WordNeuron we = sentence.get(c);
+      for (int i = 0; i < neurons.size(); i++) {
+        HiddenNeuron out = (HiddenNeuron) neurons.get(i);
+        double f = 0;
+        // Propagate hidden -> output
+        for (int j = 0; j < layerSize; j++) {
+          f += we.syn0[j] * out.syn1[j];
+        }
+        if (f <= -MAX_EXP || f >= MAX_EXP) {
+          continue;
+        } else {
+          f = (f + MAX_EXP) * (EXP_TABLE_SIZE / MAX_EXP / 2);
+          f = expTable[(int) f];
+        }
+        // 'g' is the gradient multiplied by the learning rate
+        double g = (1 - word.codeArr[i] - f) * alpha;
+        // Propagate errors output -> hidden
+        for (c = 0; c < layerSize; c++) {
+          neu1e[c] += g * out.syn1[c];
+        }
+        // Learn weights hidden -> output
+        for (c = 0; c < layerSize; c++) {
+          out.syn1[c] += g * we.syn0[c];
+        }
+      }
+
+      // Learn weights input -> hidden
+      for (int j = 0; j < layerSize; j++) {
+        we.syn0[j] += neu1e[j];
+      }
+    }
+
+  }
+
+  /**
+   * 词袋模型
+   * 
+   * @param index
+   * @param sentence
+   * @param b
+   */
+  private void cbowGram(int index, List<WordNeuron> sentence, int b) {
+    WordNeuron word = sentence.get(index);
+    int a, c = 0;
+
+    List<Neuron> neurons = word.neurons;
+    double[] neu1e = new double[layerSize];// 误差项
+    double[] neu1 = new double[layerSize];// 误差项
+    WordNeuron last_word;
+
+    for (a = b; a < window * 2 + 1 - b; a++)
+      if (a != window) {
+        c = index - window + a;
+        if (c < 0)
+          continue;
+        if (c >= sentence.size())
+          continue;
+        last_word = sentence.get(c);
+        if (last_word == null)
+          continue;
+        for (c = 0; c < layerSize; c++)
+          neu1[c] += last_word.syn0[c];
+      }
+
+    // HIERARCHICAL SOFTMAX
+    for (int d = 0; d < neurons.size(); d++) {
+      HiddenNeuron out = (HiddenNeuron) neurons.get(d);
+      double f = 0;
+      // Propagate hidden -> output
+      for (c = 0; c < layerSize; c++)
+        f += neu1[c] * out.syn1[c];
+      if (f <= -MAX_EXP)
+        continue;
+      else if (f >= MAX_EXP)
