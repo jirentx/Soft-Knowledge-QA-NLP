@@ -319,3 +319,90 @@ public class Learn {
             wordNeuron.category = category;
             wordNeuron.freq = tarFreq;
           }
+        } else {
+          wordMap.put(element.getKey(), new WordNeuron(element.getKey(),
+              tarFreq, category, layerSize));
+        }
+      }
+    }
+  }
+
+  /**
+   * Precompute the exp() table f(x) = x / (x + 1)
+   */
+  private void createExpTable() {
+    for (int i = 0; i < EXP_TABLE_SIZE; i++) {
+      expTable[i] = Math.exp(((i / (double) EXP_TABLE_SIZE * 2 - 1) * MAX_EXP));
+      expTable[i] = expTable[i] / (expTable[i] + 1);
+    }
+  }
+
+  /**
+   * 根据文件学习
+   * 
+   * @param file
+   * @throws IOException
+   */
+  public void learnFile(File file) throws IOException {
+    readVocab(file);
+    new Haffman(layerSize).make(wordMap.values());
+
+    // 查找每个神经元
+    for (Neuron neuron : wordMap.values()) {
+      ((WordNeuron) neuron).makeNeurons();
+    }
+
+    trainModel(file);
+  }
+
+  /**
+   * 根据预分类的文件学习
+   * 
+   * @param summaryFile
+   *          合并文件
+   * @param classifiedFiles
+   *          分类文件
+   * @throws IOException
+   */
+  public void learnFile(File summaryFile, File[] classifiedFiles)
+      throws IOException {
+    readVocabWithSupervised(classifiedFiles);
+    new Haffman(layerSize).make(wordMap.values());
+    // 查找每个神经元
+    for (Neuron neuron : wordMap.values()) {
+      ((WordNeuron) neuron).makeNeurons();
+    }
+    trainModel(summaryFile);
+  }
+
+  /**
+   * 保存模型
+   */
+  public void saveModel(File file) {
+    // TODO Auto-generated method stub
+
+    try (DataOutputStream dataOutputStream = new DataOutputStream(
+        new BufferedOutputStream(new FileOutputStream(file)))) {
+      dataOutputStream.writeInt(wordMap.size());
+      dataOutputStream.writeInt(layerSize);
+      double[] syn0 = null;
+      for (Entry<String, Neuron> element : wordMap.entrySet()) {
+        dataOutputStream.writeUTF(element.getKey());
+        syn0 = ((WordNeuron) element.getValue()).syn0;
+        for (double d : syn0) {
+          dataOutputStream.writeFloat(((Double) d).floatValue());
+        }
+      }
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+  }
+
+  public int getLayerSize() {
+    return layerSize;
+  }
+
+  public void setLayerSize(int layerSize) {
+    this.layerSize = layerSize;
+  }
