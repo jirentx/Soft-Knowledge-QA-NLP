@@ -406,3 +406,46 @@ public class Learn {
   public void setLayerSize(int layerSize) {
     this.layerSize = layerSize;
   }
+
+  public int getWindow() {
+    return window;
+  }
+
+  public void setWindow(int window) {
+    this.window = window;
+  }
+
+  public double getSample() {
+    return sample;
+  }
+
+  public void setSample(double sample) {
+    this.sample = sample;
+  }
+
+  public double getAlpha() {
+    return alpha;
+  }
+
+  public void setAlpha(double alpha) {
+    this.alpha = alpha;
+    this.startingAlpha = alpha;
+  }
+
+  public Boolean getIsCbow() {
+    return isCbow;
+  }
+
+  public void setIsCbow(Boolean isCbow) {
+    this.isCbow = isCbow;
+  }
+
+  public static void main(String[] args) throws IOException {
+    Learn learn = new Learn();
+    long start = System.currentTimeMillis();
+    learn.learnFile(new File("library/xh.txt"));
+    System.out.println("use time " + (System.currentTimeMillis() - start));
+    learn.saveModel(new File("library/javaVector"));
+
+  }
+}
