@@ -1,3 +1,6 @@
 package com.word2vec;
 
-import java.io.Buffered
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.File;
+impor
