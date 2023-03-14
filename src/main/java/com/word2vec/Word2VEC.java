@@ -13,4 +13,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import ja
+import java.util.Set;
+import java.util.TreeSet;
+
+import com.word2vec.domain.WordEntry;
+
+public class Word2VE
