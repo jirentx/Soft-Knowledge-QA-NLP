@@ -21,4 +21,6 @@ import com.word2vec.domain.WordEntry;
 public class Word2VEC {
 
 	public static void main(String[] args) throws IOException {
-		 Learn learn1 =
+		 Learn learn1 = new Learn();
+		 learn1.learnFile(new File("D:/NLP/精准度测试集1-分词.txt"));
+		 learn1.saveModel(new File("
