@@ -18,4 +18,7 @@ import java.util.TreeSet;
 
 import com.word2vec.domain.WordEntry;
 
-public class Word2VE
+public class Word2VEC {
+
+	public static void main(String[] args) throws IOException {
+		 Learn learn1 =
