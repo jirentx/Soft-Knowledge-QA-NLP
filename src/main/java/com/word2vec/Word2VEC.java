@@ -26,4 +26,8 @@ public class Word2VEC {
 		 learn1.saveModel(new File("D:/NLP/精准度测试集model2.txt"));
 
 		 Learn learn = new Learn();
-		 learn.learnFile(new File("D:/NLP/法律-
+		 learn.learnFile(new File("D:/NLP/法律-分词.txt"));
+		 learn.saveModel(new File("D:/NLP/法律-分词model.txt"));
+
+		Word2VEC vec = new Word2VEC();
+		vec.load
