@@ -30,4 +30,7 @@ public class Word2VEC {
 		 learn.saveModel(new File("D:/NLP/法律-分词model.txt"));
 
 		Word2VEC vec = new Word2VEC();
-		vec.load
+		vec.loadJavaModel("D:/NLP/法律-分词model.txt");
+
+		 System.out.println("国" + "\t" +
+		 Arrays.toString(ve
