@@ -38,4 +38,5 @@ public class Word2VEC {
 		
 		System.out.println(vec.distance(str));
 
-		Sy
+		System.out.println("the familar of two word:"+vec.wordDis("谁", "去"));
+		
