@@ -33,4 +33,9 @@ public class Word2VEC {
 		vec.loadJavaModel("D:/NLP/法律-分词model.txt");
 
 		 System.out.println("国" + "\t" +
-		 Arrays.toString(ve
+		 Arrays.toString(vec.getWordVector("国")));
+		String str = "谁";
+		
+		System.out.println(vec.distance(str));
+
+		Sy
