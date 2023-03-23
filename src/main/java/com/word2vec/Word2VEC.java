@@ -40,3 +40,6 @@ public class Word2VEC {
 
 		System.out.println("the familar of two word:"+vec.wordDis("谁", "去"));
 		
+		System.out.println(vec.analogy("小", "区", "行"));
+		
+		System.out.println(vec.wordDis("欺", 
