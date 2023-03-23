@@ -42,4 +42,8 @@ public class Word2VEC {
 		
 		System.out.println(vec.analogy("小", "区", "行"));
 		
-		System.out.println(vec.wordDis("欺", 
+		System.out.println(vec.wordDis("欺", "认"));
+		
+	}
+
+	private HashMap<String, float[]> wordMap = new HashMap<String, float[
