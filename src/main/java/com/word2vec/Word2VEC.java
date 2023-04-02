@@ -58,4 +58,6 @@ public class Word2VEC {
 	 * @param queryword2
 	 * @return
 	 */
-	public float wordDis(String queryword1,
+	public float wordDis(String queryword1, String queryword2) {
+		float[] vector1 = wordMap.get(queryword1);
+		float[] vector2 = wordMap.get(querywor
