@@ -54,4 +54,8 @@ public class Word2VEC {
 	
 	/**
 	 * 计算两个字的相似度    朱宏
-	 * @param quer
+	 * @param queryword1
+	 * @param queryword2
+	 * @return
+	 */
+	public float wordDis(String queryword1,
