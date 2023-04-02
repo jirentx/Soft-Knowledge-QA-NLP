@@ -46,4 +46,12 @@ public class Word2VEC {
 		
 	}
 
-	private HashMap<String, float[]> wordMap = new HashMap<String, float[
+	private HashMap<String, float[]> wordMap = new HashMap<String, float[]>();
+
+	private int words;
+	private int size;
+	private int topNSize = 40;
+	
+	/**
+	 * 计算两个字的相似度    朱宏
+	 * @param quer
