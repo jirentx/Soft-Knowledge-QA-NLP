@@ -66,4 +66,7 @@ public class Word2VEC {
 		if (vector1 == null || vector2 ==null) {
 			return 0;
 		}
-		for (int i = 0; 
+		for (int i = 0; i < vector1.length; i++) {
+			dist += vector1[i] * vector2[i];
+		}
+		return dist;
