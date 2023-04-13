@@ -60,4 +60,10 @@ public class Word2VEC {
 	 */
 	public float wordDis(String queryword1, String queryword2) {
 		float[] vector1 = wordMap.get(queryword1);
-		float[] vector2 = wordMap.get(querywor
+		float[] vector2 = wordMap.get(queryword2);
+
+		float dist = 0;
+		if (vector1 == null || vector2 ==null) {
+			return 0;
+		}
+		for (int i = 0; 
