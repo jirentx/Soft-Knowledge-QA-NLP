@@ -70,3 +70,12 @@ public class Word2VEC {
 			dist += vector1[i] * vector2[i];
 		}
 		return dist;
+	}
+	/**
+	 * 加载模型
+	 * 
+	 * @param path
+	 *            模型的路径
+	 * @throws IOException
+	 */
+	public void loadG
