@@ -78,4 +78,6 @@ public class Word2VEC {
 	 *            模型的路径
 	 * @throws IOException
 	 */
-	public void loadG
+	public void loadGoogleModel(String path) throws IOException {
+		DataInputStream dis = null;
+		BufferedInputStream bis =
