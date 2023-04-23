@@ -84,4 +84,7 @@ public class Word2VEC {
 		double len = 0;
 		float vector = 0;
 		try {
-			bis = new BufferedInput
+			bis = new BufferedInputStream(new FileInputStream(path));
+			dis = new DataInputStream(bis);
+			// //读取词数
+			words = Integer.parseInt(readSt
