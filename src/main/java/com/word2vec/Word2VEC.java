@@ -80,4 +80,8 @@ public class Word2VEC {
 	 */
 	public void loadGoogleModel(String path) throws IOException {
 		DataInputStream dis = null;
-		BufferedInputStream bis =
+		BufferedInputStream bis = null;
+		double len = 0;
+		float vector = 0;
+		try {
+			bis = new BufferedInput
