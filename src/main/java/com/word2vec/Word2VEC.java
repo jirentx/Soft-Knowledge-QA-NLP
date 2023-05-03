@@ -87,4 +87,8 @@ public class Word2VEC {
 			bis = new BufferedInputStream(new FileInputStream(path));
 			dis = new DataInputStream(bis);
 			// //读取词数
-			words = Integer.parseInt(readSt
+			words = Integer.parseInt(readString(dis));
+			// //大小
+			size = Integer.parseInt(readString(dis));
+			String word;
+			floa
