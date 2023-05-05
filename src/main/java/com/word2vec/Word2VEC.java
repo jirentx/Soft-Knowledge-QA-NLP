@@ -97,4 +97,8 @@ public class Word2VEC {
 				vectors = new float[size];
 				len = 0;
 				for (int j = 0; j < size; j++) {
-					vector = read
+					vector = readFloat(dis);
+					len += vector * vector;
+					vectors[j] = (float) vector;
+				}
+				len = Mat
