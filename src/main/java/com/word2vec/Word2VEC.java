@@ -94,4 +94,7 @@ public class Word2VEC {
 			float[] vectors = null;
 			for (int i = 0; i < words; i++) {
 				word = readString(dis);
-				vec
+				vectors = new float[size];
+				len = 0;
+				for (int j = 0; j < size; j++) {
+					vector = read
