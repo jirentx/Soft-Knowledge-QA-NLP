@@ -101,4 +101,10 @@ public class Word2VEC {
 					len += vector * vector;
 					vectors[j] = (float) vector;
 				}
-				len = Mat
+				len = Math.sqrt(len);
+
+				for (int j = 0; j < size; j++) {
+					vectors[j] /= len;
+				}
+
+				wordMap.put(word
