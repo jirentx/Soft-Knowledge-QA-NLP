@@ -123,4 +123,5 @@ public class Word2VEC {
 	 *            模型的路径
 	 * @throws IOException
 	 */
-	publi
+	public void loadJavaModel(String path) throws IOException {
+		try (DataInputStream dis = new DataInputStream(n
