@@ -107,4 +107,11 @@ public class Word2VEC {
 					vectors[j] /= len;
 				}
 
-				wordMap.put(word
+				wordMap.put(word, vectors);
+				dis.read();
+			}
+		} finally {
+			bis.close();
+			dis.close();
+		}
+	}
