@@ -115,3 +115,12 @@ public class Word2VEC {
 			dis.close();
 		}
 	}
+
+	/**
+	 * 加载模型
+	 * 
+	 * @param path
+	 *            模型的路径
+	 * @throws IOException
+	 */
+	publi
