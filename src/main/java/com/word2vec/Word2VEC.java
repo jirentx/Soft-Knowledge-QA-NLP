@@ -124,4 +124,8 @@ public class Word2VEC {
 	 * @throws IOException
 	 */
 	public void loadJavaModel(String path) throws IOException {
-		try (DataInputStream dis = new DataInputStream(n
+		try (DataInputStream dis = new DataInputStream(new BufferedInputStream(new FileInputStream(path)))) {
+			words = dis.readInt();
+			size = dis.readInt();
+
+	
