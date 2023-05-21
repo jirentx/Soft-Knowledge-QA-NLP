@@ -136,4 +136,7 @@ public class Word2VEC {
 				double len = 0;
 				key = dis.readUTF();
 				value = new float[size];
-				for (int j = 0; j < 
+				for (int j = 0; j < size; j++) {
+					vector = dis.readFloat();
+					len += vector * vector;
+					val
