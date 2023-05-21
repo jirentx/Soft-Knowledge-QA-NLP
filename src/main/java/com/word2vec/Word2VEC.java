@@ -133,4 +133,7 @@ public class Word2VEC {
 			String key = null;
 			float[] value = null;
 			for (int i = 0; i < words; i++) {
-				do
+				double len = 0;
+				key = dis.readUTF();
+				value = new float[size];
+				for (int j = 0; j < 
