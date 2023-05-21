@@ -128,4 +128,9 @@ public class Word2VEC {
 			words = dis.readInt();
 			size = dis.readInt();
 
-	
+			float vector = 0;
+
+			String key = null;
+			float[] value = null;
+			for (int i = 0; i < words; i++) {
+				do
