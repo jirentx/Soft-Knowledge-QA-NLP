@@ -144,4 +144,13 @@ public class Word2VEC {
 
 				len = Math.sqrt(len);
 
-				for (int j = 0; j < s
+				for (int j = 0; j < size; j++) {
+					value[j] /= len;
+				}
+				wordMap.put(key, value);
+			}
+
+		}
+	}
+
+	private s
