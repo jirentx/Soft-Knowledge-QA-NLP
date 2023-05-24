@@ -139,4 +139,9 @@ public class Word2VEC {
 				for (int j = 0; j < size; j++) {
 					vector = dis.readFloat();
 					len += vector * vector;
-					val
+					value[j] = vector;
+				}
+
+				len = Math.sqrt(len);
+
+				for (int j = 0; j < s
