@@ -160,4 +160,6 @@ public class Word2VEC {
 	 * 
 	 * @return
 	 */
-	public TreeSet<WordEntry> analogy(St
+	public TreeSet<WordEntry> analogy(String word0, String word1, String word2) {
+		float[] wv0 = getWordVector(word0);
+		float[] 
