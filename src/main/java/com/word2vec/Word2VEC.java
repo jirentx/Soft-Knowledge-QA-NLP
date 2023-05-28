@@ -165,4 +165,8 @@ public class Word2VEC {
 		float[] wv1 = getWordVector(word1);
 		float[] wv2 = getWordVector(word2);
 
-		if (wv1 == null || wv2 == 
+		if (wv1 == null || wv2 == null || wv0 == null) {
+			return null;
+		}
+		float[] wordVector = new float[size];
+		for (int i = 0; i < size; 
