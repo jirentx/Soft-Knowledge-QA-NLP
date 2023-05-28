@@ -162,4 +162,7 @@ public class Word2VEC {
 	 */
 	public TreeSet<WordEntry> analogy(String word0, String word1, String word2) {
 		float[] wv0 = getWordVector(word0);
-		float[] 
+		float[] wv1 = getWordVector(word1);
+		float[] wv2 = getWordVector(word2);
+
+		if (wv1 == null || wv2 == 
