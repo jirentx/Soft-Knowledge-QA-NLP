@@ -153,4 +153,11 @@ public class Word2VEC {
 		}
 	}
 
-	private s
+	private static final int MAX_SIZE = 50;
+
+	/**
+	 * 近义词
+	 * 
+	 * @return
+	 */
+	public TreeSet<WordEntry> analogy(St
