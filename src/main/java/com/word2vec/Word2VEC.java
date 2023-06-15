@@ -174,3 +174,5 @@ public class Word2VEC {
 		}
 		float[] tempVector;
 		String name;
+		List<WordEntry> wordEntrys = new ArrayList<WordEntry>(topNSize);
+		for (Entry<String, float[]>
