@@ -169,4 +169,8 @@ public class Word2VEC {
 			return null;
 		}
 		float[] wordVector = new float[size];
-		for (int i = 0; i < size; 
+		for (int i = 0; i < size; i++) {
+			wordVector[i] = wv1[i] - wv0[i] + wv2[i];
+		}
+		float[] tempVector;
+		String name;
