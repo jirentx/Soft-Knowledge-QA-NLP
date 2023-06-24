@@ -183,4 +183,8 @@ public class Word2VEC {
 			float dist = 0;
 			tempVector = entry.getValue();
 			for (int i = 0; i < wordVector.length; i++) {
-				dist += wordVect
+				dist += wordVector[i] * tempVector[i];
+			}
+			insertTopN(name, dist, wordEntrys);
+		}
+		return new Tree
