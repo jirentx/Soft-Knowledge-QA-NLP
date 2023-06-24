@@ -177,4 +177,8 @@ public class Word2VEC {
 		List<WordEntry> wordEntrys = new ArrayList<WordEntry>(topNSize);
 		for (Entry<String, float[]> entry : wordMap.entrySet()) {
 			name = entry.getKey();
-			if (name.equals(word0) || name.equ
+			if (name.equals(word0) || name.equals(word1) || name.equals(word2)) {
+				continue;
+			}
+			float dist = 0;
+			tempVector = entry.getValue(
