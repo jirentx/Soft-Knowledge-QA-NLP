@@ -187,4 +187,7 @@ public class Word2VEC {
 			}
 			insertTopN(name, dist, wordEntrys);
 		}
-		return new Tree
+		return new TreeSet<WordEntry>(wordEntrys);
+	}
+
+	private void insertTopN(String name, float
