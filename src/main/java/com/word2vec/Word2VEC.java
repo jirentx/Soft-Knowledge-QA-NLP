@@ -181,4 +181,6 @@ public class Word2VEC {
 				continue;
 			}
 			float dist = 0;
-			tempVector = entry.getValue(
+			tempVector = entry.getValue();
+			for (int i = 0; i < wordVector.length; i++) {
+				dist += wordVect
