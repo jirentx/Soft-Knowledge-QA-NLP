@@ -190,4 +190,6 @@ public class Word2VEC {
 		return new TreeSet<WordEntry>(wordEntrys);
 	}
 
-	private void insertTopN(String name, float
+	private void insertTopN(String name, float score, List<WordEntry> wordsEntrys) {
+		// TODO Auto-generated method stub
+		if (wordsEntrys.siz
