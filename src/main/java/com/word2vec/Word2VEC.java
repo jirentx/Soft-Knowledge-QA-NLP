@@ -199,4 +199,7 @@ public class Word2VEC {
 		float min = Float.MAX_VALUE;
 		int minOffe = 0;
 		for (int i = 0; i < topNSize; i++) {
-			WordEntry wordE
+			WordEntry wordEntry = wordsEntrys.get(i);
+			if (min > wordEntry.score) {
+				min = wordEntry.score;
+				minOffe = i
