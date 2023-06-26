@@ -196,4 +196,7 @@ public class Word2VEC {
 			wordsEntrys.add(new WordEntry(name, score));
 			return;
 		}
-		float m
+		float min = Float.MAX_VALUE;
+		int minOffe = 0;
+		for (int i = 0; i < topNSize; i++) {
+			WordEntry wordE
