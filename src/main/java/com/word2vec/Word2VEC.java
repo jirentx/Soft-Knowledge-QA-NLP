@@ -209,3 +209,9 @@ public class Word2VEC {
 		if (score > min) {
 			wordsEntrys.set(minOffe, new WordEntry(name, score));
 		}
+
+	}
+	
+	public Set<WordEntry> distance(String queryWord) {
+
+		float[] center = wordM
