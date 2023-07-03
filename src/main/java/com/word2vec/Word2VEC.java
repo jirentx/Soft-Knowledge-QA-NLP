@@ -202,4 +202,10 @@ public class Word2VEC {
 			WordEntry wordEntry = wordsEntrys.get(i);
 			if (min > wordEntry.score) {
 				min = wordEntry.score;
-				minOffe = i
+				minOffe = i;
+			}
+		}
+
+		if (score > min) {
+			wordsEntrys.set(minOffe, new WordEntry(name, score));
+		}
