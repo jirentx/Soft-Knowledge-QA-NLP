@@ -220,4 +220,7 @@ public class Word2VEC {
 		}
 
 		int resultSize = wordMap.size() < topNSize ? wordMap.size() : topNSize;
-		TreeSet<WordEntry> result = new Tr
+		TreeSet<WordEntry> result = new TreeSet<WordEntry>();
+
+		double min = Float.MIN_VALUE;
+		for (Map.Entry<Strin
