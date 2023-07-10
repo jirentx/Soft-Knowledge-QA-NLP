@@ -223,4 +223,7 @@ public class Word2VEC {
 		TreeSet<WordEntry> result = new TreeSet<WordEntry>();
 
 		double min = Float.MIN_VALUE;
-		for (Map.Entry<Strin
+		for (Map.Entry<String, float[]> entry : wordMap.entrySet()) {
+			float[] vector = entry.getValue();
+			float dist = 0;
+			f
