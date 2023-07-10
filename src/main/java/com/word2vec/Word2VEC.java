@@ -226,4 +226,8 @@ public class Word2VEC {
 		for (Map.Entry<String, float[]> entry : wordMap.entrySet()) {
 			float[] vector = entry.getValue();
 			float dist = 0;
-			f
+			for (int i = 0; i < vector.length; i++) {
+				dist += center[i] * vector[i];
+			}
+
+			if (dist > min
