@@ -230,4 +230,7 @@ public class Word2VEC {
 				dist += center[i] * vector[i];
 			}
 
-			if (dist > min
+			if (dist > min) {
+				result.add(new WordEntry(entry.getKey(), dist));
+				if (resultSize < result.size()) {
+					result.pollLa
