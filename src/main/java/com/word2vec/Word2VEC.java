@@ -243,4 +243,7 @@ public class Word2VEC {
 		return result;
 	}
 
-	pub
+	public Set<WordEntry> distance(List<String> words) {
+
+		float[] center = null;
+		for (String word : wo
