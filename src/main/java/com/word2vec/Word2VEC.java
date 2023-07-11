@@ -246,4 +246,9 @@ public class Word2VEC {
 	public Set<WordEntry> distance(List<String> words) {
 
 		float[] center = null;
-		for (String word : wo
+		for (String word : words) {
+			center = sum(center, wordMap.get(word));
+		}
+
+		if (center == null) {
+			return Collections.
