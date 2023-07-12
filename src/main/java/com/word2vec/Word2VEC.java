@@ -251,4 +251,7 @@ public class Word2VEC {
 		}
 
 		if (center == null) {
-			return Collections.
+			return Collections.emptySet();
+		}
+
+		int resultSize = wordMap.size() < topNSize ? wordMap.size() : to
