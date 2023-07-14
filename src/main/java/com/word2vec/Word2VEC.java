@@ -254,4 +254,7 @@ public class Word2VEC {
 			return Collections.emptySet();
 		}
 
-		int resultSize = wordMap.size() < topNSize ? wordMap.size() : to
+		int resultSize = wordMap.size() < topNSize ? wordMap.size() : topNSize;
+		TreeSet<WordEntry> result = new TreeSet<WordEntry>();
+
+		double mi
