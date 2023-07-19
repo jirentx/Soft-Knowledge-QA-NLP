@@ -269,4 +269,13 @@ public class Word2VEC {
 				result.add(new WordEntry(entry.getKey(), dist));
 				if (resultSize < result.size()) {
 					result.pollLast();
-			
+				}
+				min = result.last().score;
+			}
+		}
+		result.pollFirst();
+
+		return result;
+	}
+
+	privat
