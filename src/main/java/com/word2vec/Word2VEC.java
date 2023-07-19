@@ -259,4 +259,7 @@ public class Word2VEC {
 
 		double min = Float.MIN_VALUE;
 		for (Map.Entry<String, float[]> entry : wordMap.entrySet()) {
-			floa
+			float[] vector = entry.getValue();
+			float dist = 0;
+			for (int i = 0; i < vector.length; i++) {
+				dist += cente
