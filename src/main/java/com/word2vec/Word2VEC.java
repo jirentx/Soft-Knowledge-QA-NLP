@@ -262,4 +262,8 @@ public class Word2VEC {
 			float[] vector = entry.getValue();
 			float dist = 0;
 			for (int i = 0; i < vector.length; i++) {
-				dist += cente
+				dist += center[i] * vector[i];
+			}
+
+			if (dist > min) {
+				result.add(new WordEntry(entry.get
