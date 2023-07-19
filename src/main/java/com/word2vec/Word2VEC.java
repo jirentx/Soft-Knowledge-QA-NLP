@@ -266,4 +266,7 @@ public class Word2VEC {
 			}
 
 			if (dist > min) {
-				result.add(new WordEntry(entry.get
+				result.add(new WordEntry(entry.getKey(), dist));
+				if (resultSize < result.size()) {
+					result.pollLast();
+			
