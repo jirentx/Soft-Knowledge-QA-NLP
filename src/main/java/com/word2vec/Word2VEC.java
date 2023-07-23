@@ -278,4 +278,7 @@ public class Word2VEC {
 		return result;
 	}
 
-	privat
+	private float[] sum(float[] center, float[] fs) {
+		// TODO Auto-generated method stub
+
+		
