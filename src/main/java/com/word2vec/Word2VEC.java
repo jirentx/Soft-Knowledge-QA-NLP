@@ -281,4 +281,9 @@ public class Word2VEC {
 	private float[] sum(float[] center, float[] fs) {
 		// TODO Auto-generated method stub
 
-		
+		if (center == null && fs == null) {
+			return null;
+		}
+
+		if (fs == null) {
+			return center;
