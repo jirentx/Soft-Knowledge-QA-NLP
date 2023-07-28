@@ -293,4 +293,16 @@ public class Word2VEC {
 			return fs;
 		}
 
-		for (int i = 0; i < fs.length; 
+		for (int i = 0; i < fs.length; i++) {
+			center[i] += fs[i];
+		}
+
+		return center;
+	}
+
+	/**
+	 * 得到词向量
+	 * 
+	 * @param word
+	 * @return
+	 *
