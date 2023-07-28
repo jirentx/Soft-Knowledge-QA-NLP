@@ -287,3 +287,10 @@ public class Word2VEC {
 
 		if (fs == null) {
 			return center;
+		}
+
+		if (center == null) {
+			return fs;
+		}
+
+		for (int i = 0; i < fs.length; 
