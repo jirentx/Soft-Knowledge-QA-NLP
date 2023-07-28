@@ -305,4 +305,9 @@ public class Word2VEC {
 	 * 
 	 * @param word
 	 * @return
-	 *
+	 */
+	public float[] getWordVector(String word) {
+		return wordMap.get(word);
+	}
+
+	public static flo
