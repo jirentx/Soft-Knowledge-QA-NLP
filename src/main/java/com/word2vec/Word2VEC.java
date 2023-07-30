@@ -310,4 +310,6 @@ public class Word2VEC {
 		return wordMap.get(word);
 	}
 
-	public static flo
+	public static float readFloat(InputStream is) throws IOException {
+		byte[] bytes = new byte[4];
+		is.re
