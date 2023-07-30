@@ -321,4 +321,7 @@ public class Word2VEC {
 	 * 
 	 * @param b
 	 * @return
-	
+	 */
+	public static float getFloat(byte[] b) {
+		int accum = 0;
+		accum = accum | (b[0] & 0xff)
