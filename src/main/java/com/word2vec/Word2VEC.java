@@ -324,4 +324,7 @@ public class Word2VEC {
 	 */
 	public static float getFloat(byte[] b) {
 		int accum = 0;
-		accum = accum | (b[0] & 0xff)
+		accum = accum | (b[0] & 0xff) << 0;
+		accum = accum | (b[1] & 0xff) << 8;
+		accum = accum | (b[2] & 0xff) << 16;
+		accum 
