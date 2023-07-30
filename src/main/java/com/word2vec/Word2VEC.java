@@ -312,4 +312,13 @@ public class Word2VEC {
 
 	public static float readFloat(InputStream is) throws IOException {
 		byte[] bytes = new byte[4];
-		is.re
+		is.read(bytes);
+		return getFloat(bytes);
+	}
+
+	/**
+	 * 读取一个float
+	 * 
+	 * @param b
+	 * @return
+	
