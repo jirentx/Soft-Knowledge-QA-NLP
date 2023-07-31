@@ -333,3 +333,9 @@ public class Word2VEC {
 
 	/**
 	 * 读取一个字符串
+	 * 
+	 * @param dis
+	 * @return
+	 * @throws IOException
+	 */
+	private static 
