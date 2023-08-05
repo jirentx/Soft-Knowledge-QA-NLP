@@ -348,4 +348,7 @@ public class Word2VEC {
 			i++;
 			bytes[i] = b;
 			b = dis.readByte();
-			if
+			if (i == 49) {
+				sb.append(new String(bytes));
+				i = -1;
+				bytes = new byte[MAX_
