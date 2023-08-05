@@ -340,4 +340,7 @@ public class Word2VEC {
 	 */
 	private static String readString(DataInputStream dis) throws IOException {
 		// TODO Auto-generated method stub
-		
+		byte[] bytes = new byte[MAX_SIZE];
+		byte b = dis.readByte();
+		int i = -1;
+		StringBuilder sb = new
