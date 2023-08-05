@@ -338,4 +338,6 @@ public class Word2VEC {
 	 * @return
 	 * @throws IOException
 	 */
-	private static 
+	private static String readString(DataInputStream dis) throws IOException {
+		// TODO Auto-generated method stub
+		
