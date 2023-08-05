@@ -343,4 +343,9 @@ public class Word2VEC {
 		byte[] bytes = new byte[MAX_SIZE];
 		byte b = dis.readByte();
 		int i = -1;
-		StringBuilder sb = new
+		StringBuilder sb = new StringBuilder();
+		while (b != 32 && b != 10) {
+			i++;
+			bytes[i] = b;
+			b = dis.readByte();
+			if
