@@ -351,4 +351,11 @@ public class Word2VEC {
 			if (i == 49) {
 				sb.append(new String(bytes));
 				i = -1;
-				bytes = new byte[MAX_
+				bytes = new byte[MAX_SIZE];
+			}
+		}
+		sb.append(new String(bytes, 0, i + 1));
+		return sb.toString();
+	}
+
+	p
