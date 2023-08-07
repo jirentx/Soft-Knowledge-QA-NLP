@@ -358,4 +358,8 @@ public class Word2VEC {
 		return sb.toString();
 	}
 
-	p
+	public int getTopNSize() {
+		return topNSize;
+	}
+
+	public void setTopNSize(int
