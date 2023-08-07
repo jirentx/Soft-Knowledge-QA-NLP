@@ -362,4 +362,9 @@ public class Word2VEC {
 		return topNSize;
 	}
 
-	public void setTopNSize(int
+	public void setTopNSize(int topNSize) {
+		this.topNSize = topNSize;
+	}
+
+	public HashMap<String, float[]> getWordMap() {
+		retu
