@@ -375,4 +375,7 @@ public class Word2VEC {
 	}
 
 	public int getSize() {
-		ret
+		return size;
+	}
+
+}
