@@ -367,4 +367,12 @@ public class Word2VEC {
 	}
 
 	public HashMap<String, float[]> getWordMap() {
-		retu
+		return wordMap;
+	}
+
+	public int getWords() {
+		return words;
+	}
+
+	public int getSize() {
+		ret
