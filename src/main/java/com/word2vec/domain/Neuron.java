@@ -7,4 +7,6 @@ public abstract class Neuron implements Comparable<Neuron> {
   // 语料预分类
   public int category = -1;
 
-  public int
+  public int compareTo(Neuron neuron) {
+    if (this.category == neuron.category) {
+      if (this.freq > neur
