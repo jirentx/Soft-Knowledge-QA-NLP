@@ -1,3 +1,5 @@
 package com.word2vec.domain;
 
-pu
+public abstract class Neuron implements Comparable<Neuron> {
+  public double freq;
+  pu
