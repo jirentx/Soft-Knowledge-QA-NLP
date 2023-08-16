@@ -9,4 +9,9 @@ public abstract class Neuron implements Comparable<Neuron> {
 
   public int compareTo(Neuron neuron) {
     if (this.category == neuron.category) {
-      if (this.freq > neur
+      if (this.freq > neuron.freq) {
+        return 1;
+      } else {
+        return -1;
+      }
+    } else if (this.category >
