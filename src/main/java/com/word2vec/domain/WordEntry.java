@@ -22,3 +22,8 @@ public class WordEntry implements Comparable<WordEntry> {
         if (this.score < o.score) {
             return 1;
         } else {
+            return -1;
+        }
+    }
+
+}
