@@ -12,4 +12,8 @@ public class WordNeuron extends Neuron {
   public int[] codeArr = null;
 
   public List<Neuron> makeNeurons() {
-    if (
+    if (neurons != null) {
+      return neurons;
+    }
+    Neuron neuron = this;
+    neurons = new LinkedList<>(
