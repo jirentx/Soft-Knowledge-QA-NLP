@@ -6,4 +6,6 @@ import java.util.List;
 import java.util.Random;
 
 public class WordNeuron extends Neuron {
-  p
+  public String name;
+  public double[] syn0 = null; // input->hidden
+  public List<Neuron> neurons
