@@ -16,4 +16,8 @@ public class WordNeuron extends Neuron {
       return neurons;
     }
     Neuron neuron = this;
-    neurons = new LinkedList<>(
+    neurons = new LinkedList<>();
+    while ((neuron = neuron.parent) != null) {
+      neurons.add(neuron);
+    }
+    Collec
