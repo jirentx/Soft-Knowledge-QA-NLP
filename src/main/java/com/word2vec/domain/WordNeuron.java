@@ -20,4 +20,7 @@ public class WordNeuron extends Neuron {
     while ((neuron = neuron.parent) != null) {
       neurons.add(neuron);
     }
-    Collec
+    Collections.reverse(neurons);
+    codeArr = new int[neurons.size()];
+
+    for (int i 
