@@ -23,4 +23,7 @@ public class WordNeuron extends Neuron {
     Collections.reverse(neurons);
     codeArr = new int[neurons.size()];
 
-    for (int i 
+    for (int i = 1; i < neurons.size(); i++) {
+      codeArr[i - 1] = neurons.get(i).code;
+    }
+    codeArr[codeArr.leng
