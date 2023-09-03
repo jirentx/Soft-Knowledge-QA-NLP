@@ -26,4 +26,9 @@ public class WordNeuron extends Neuron {
     for (int i = 1; i < neurons.size(); i++) {
       codeArr[i - 1] = neurons.get(i).code;
     }
-    codeArr[codeArr.leng
+    codeArr[codeArr.length - 1] = this.code;
+
+    return neurons;
+  }
+
+  public WordNeuron(String name, double freq, int
