@@ -37,4 +37,11 @@ public class WordNeuron extends Neuron {
     this.syn0 = new double[layerSize];
     Random random = new Random();
     for (int i = 0; i < syn0.length; i++) {
-      syn0[i] 
+      syn0[i] = (random.nextDouble() - 0.5) / layerSize;
+    }
+  }
+
+  /**
+   * 用于有监督的创造hoffman tree
+   * 
+   * @para
