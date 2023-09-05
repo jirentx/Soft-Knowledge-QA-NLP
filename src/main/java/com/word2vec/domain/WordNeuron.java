@@ -48,4 +48,7 @@ public class WordNeuron extends Neuron {
    * @param freq
    * @param layerSize
    */
-  public WordNeuron(String name, doubl
+  public WordNeuron(String name, double freq, int category, int layerSize) {
+    this.name = name;
+    this.freq = freq;
+    this.syn
