@@ -44,4 +44,8 @@ public class WordNeuron extends Neuron {
   /**
    * 用于有监督的创造hoffman tree
    * 
-   * @para
+   * @param name
+   * @param freq
+   * @param layerSize
+   */
+  public WordNeuron(String name, doubl
