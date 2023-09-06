@@ -55,4 +55,8 @@ public class WordNeuron extends Neuron {
     this.category = category;
     Random random = new Random();
     for (int i = 0; i < syn0.length; i++) {
-      syn0[i] = (random.nextDouble() - 0.5) / laye
+      syn0[i] = (random.nextDouble() - 0.5) / layerSize;
+    }
+  }
+
+}
