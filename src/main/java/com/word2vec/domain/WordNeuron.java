@@ -51,4 +51,7 @@ public class WordNeuron extends Neuron {
   public WordNeuron(String name, double freq, int category, int layerSize) {
     this.name = name;
     this.freq = freq;
-    this.syn
+    this.syn0 = new double[layerSize];
+    this.category = category;
+    Random random = new Random();
+    fo
