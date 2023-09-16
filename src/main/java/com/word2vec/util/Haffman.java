@@ -14,3 +14,9 @@ import com.word2vec.domain.Neuron;
  */
 public class Haffman {
   private int layerSize;
+
+  public Haffman(int layerSize) {
+    this.layerSize = layerSize;
+  }
+
+  private TreeSet
