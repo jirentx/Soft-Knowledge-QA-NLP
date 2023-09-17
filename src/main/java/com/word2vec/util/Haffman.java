@@ -22,4 +22,11 @@ public class Haffman {
   private TreeSet<Neuron> set = new TreeSet<>();
 
   public void make(Collection<Neuron> neurons) {
-    set.ad
+    set.addAll(neurons);
+    while (set.size() > 1) {
+      merger();
+    }
+  }
+
+  private void merger() {
+    
