@@ -31,4 +31,7 @@ public class Haffman {
   private void merger() {
     HiddenNeuron hn = new HiddenNeuron(layerSize);
     Neuron min1 = set.pollFirst();
-    Neuron min
+    Neuron min2 = set.pollFirst();
+    hn.category = min2.category;
+    hn.freq = min1.freq + min2.freq;
+    min1.par
