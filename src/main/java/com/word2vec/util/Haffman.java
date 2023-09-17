@@ -19,4 +19,7 @@ public class Haffman {
     this.layerSize = layerSize;
   }
 
-  private TreeSet
+  private TreeSet<Neuron> set = new TreeSet<>();
+
+  public void make(Collection<Neuron> neurons) {
+    set.ad
