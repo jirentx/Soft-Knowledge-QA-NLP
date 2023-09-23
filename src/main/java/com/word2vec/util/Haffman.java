@@ -34,4 +34,11 @@ public class Haffman {
     Neuron min2 = set.pollFirst();
     hn.category = min2.category;
     hn.freq = min1.freq + min2.freq;
-    min1.par
+    min1.parent = hn;
+    min2.parent = hn;
+    min1.code = 0;
+    min2.code = 1;
+    set.add(hn);
+  }
+
+}
