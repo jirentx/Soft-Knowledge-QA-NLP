@@ -112,3 +112,51 @@ public class WordKmeans {
         /**
          * 重新计算中心点
          * @param wordMap
+         */
+        public void updateCenter(HashMap<String, float[]> wordMap) {
+            for (int i = 0; i < center.length; i++) {
+                center[i] = 0;
+            }
+            float[] value = null;
+            for (String keyWord : values.keySet()) {
+                value = wordMap.get(keyWord);
+                for (int i = 0; i < value.length; i++) {
+                    center[i] += value[i];
+                }
+            }
+            for (int i = 0; i < center.length; i++) {
+                center[i] = center[i] / values.size();
+            }
+        }
+
+        /**
+         * 清空历史结果
+         */
+        public void clean() {
+            // TODO Auto-generated method stub
+            values.clear();
+        }
+
+        /**
+         * 取得每个类别的前n个结果
+         * @param n
+         * @return 
+         */
+        public List<Entry<String, Double>> getTop(int n) {
+            List<Map.Entry<String, Double>> arrayList = new ArrayList<Map.Entry<String, Double>>(
+                values.entrySet());
+            Collections.sort(arrayList, new Comparator<Map.Entry<String, Double>>() {
+                @Override
+                public int compare(Entry<String, Double> o1, Entry<String, Double> o2) {
+                    // TODO Auto-generated method stub
+                    return o1.getValue() > o2.getValue() ? 1 : -1;
+                }
+            });
+            int min = Math.min(n, arrayList.size() - 1);
+            if(min<=1)return Collections.emptyList() ;
+            return arrayList.subList(0, min);
+        }
+
+    }
+
+}
