@@ -9,4 +9,15 @@ body {
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
-	wi
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	width: 800px;
+}
+
+.bidTitle {
+	color: #e6e6e6;
+	font-size: 34px;
+	
