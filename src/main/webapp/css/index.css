@@ -20,4 +20,14 @@ body {
 .bidTitle {
 	color: #e6e6e6;
 	font-size: 34px;
-	
+	font-weight: 600;
+}
+
+.logCon {
+	color: #FFFFFF;
+	margin-top: 40px;
+}
+
+.line {float:left；}
+
+body 
