@@ -36,3 +36,10 @@ body .content {
 	position: fixed;
 	background: #0f1a1494;
 	padding: 5% 1%;
+
+}
+
+body .logingBut {
+	background: #2d8c5fa6;
+	border: none;
+	padding: 12px 0
