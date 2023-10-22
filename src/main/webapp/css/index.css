@@ -55,3 +55,11 @@ body .bt_input {
 	border: none;
 	padding: 11px 5px;
 	width: 500px;
+	color: #333;
+	margin-left: 5px;
+	background: #ffffffd9;
+	
+}
+
+body .logCon span {
+	font-size: 
