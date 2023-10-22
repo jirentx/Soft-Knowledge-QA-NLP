@@ -47,4 +47,11 @@ body .logingBut {
 	border-radius: 2px;
 	width: 150px;
 	margin-left: -335px;
-	margin-top:3p
+	margin-top:3px;
+}
+
+body .bt_input {
+	border-radius: 2px;
+	border: none;
+	padding: 11px 5px;
+	width: 500px;
