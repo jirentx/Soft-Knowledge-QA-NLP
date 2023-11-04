@@ -31,4 +31,10 @@ body {
 .line {}
 
 body .content {
-	
+	width: 42%;
+	position: fixed;
+	background: #0f1a1494;
+	left: 29%;
+	padding: 5% 1%;
+	margin-top: 12%;
+	bord
