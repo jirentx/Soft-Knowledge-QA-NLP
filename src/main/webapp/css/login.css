@@ -43,4 +43,8 @@ body .content {
 body .logingBut {
 	background: #2d8c5fa6;
 	border: none;
-	pad
+	padding: 12px 0px;
+	color: #edefee;
+	border-radius: 2px;
+	width: 330px;
+	margin-left: 30p
