@@ -37,4 +37,10 @@ body .content {
 	left: 29%;
 	padding: 5% 1%;
 	margin-top: 12%;
-	bord
+	border-radius: 5px;
+}
+
+body .logingBut {
+	background: #2d8c5fa6;
+	border: none;
+	pad
