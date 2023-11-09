@@ -55,4 +55,8 @@ body .bt_input {
 	border-radius: 2px;
 	border: none;
 	padding: 11px 5px;
-	width: 330
+	width: 330px;
+	margin-right: 20px;
+	color: #333;
+	margin-left: 5px;
+	margin-bottom: 18px;
