@@ -60,3 +60,9 @@ body .bt_input {
 	color: #333;
 	margin-left: 5px;
 	margin-bottom: 18px;
+	background: #ffffffd9;
+}
+
+body .logCon span {
+	font-size: 18px;
+	height: 40p
