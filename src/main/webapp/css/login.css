@@ -65,4 +65,6 @@ body .bt_input {
 
 body .logCon span {
 	font-size: 18px;
-	height: 40p
+	height: 40px;
+	line-height: 40px;
+}
