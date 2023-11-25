@@ -3,4 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ainlp</groupId>
   <artifactId>QA_NLP</artifactId>
-  <packaging>war</packag
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>QA_NLP Maven Webapp</name>
+  <url>http://mav
