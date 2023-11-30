@@ -18,4 +18,7 @@
       <groupId>com.hankcs</groupId>
       <artifactId>hanlp</artifactId>
       <version>portable-1.5.3</version>
-    </dependenc
+    </dependency>
+    <dependency>
+      <groupId>com.hankcs.nlp</groupId>
+      <artifactId>hanlp-lucene-p
