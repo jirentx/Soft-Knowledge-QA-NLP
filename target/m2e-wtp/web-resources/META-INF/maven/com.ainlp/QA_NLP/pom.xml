@@ -42,4 +42,8 @@
 </dependency>
   </dependencies>
   <build>
-    <finalName>QA_NLP
+    <finalName>QA_NLP</finalName>
+     <plugins>
+<plugin>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-ma
