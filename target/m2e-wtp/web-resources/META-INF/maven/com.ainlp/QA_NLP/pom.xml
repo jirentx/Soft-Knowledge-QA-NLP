@@ -46,4 +46,7 @@
      <plugins>
 <plugin>
     <groupId>org.eclipse.jetty</groupId>
-    <artifactId>jetty-ma
+    <artifactId>jetty-maven-plugin</artifactId>
+    <version>9.3.6.v20151106</version>
+    <executions>
+    	<!-- 
