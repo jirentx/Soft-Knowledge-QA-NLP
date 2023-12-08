@@ -60,4 +60,8 @@
     	<!-- 在 integration-test 的 post 阶段关闭 jetty -->
     	<execution>
     		<id>stop-jetty</id>
-    		<ph
+    		<phase>post-integration-test</phase>
+    		<goals>
+    			<goal>stop</goal>
+    		</goals>
+    	</e
