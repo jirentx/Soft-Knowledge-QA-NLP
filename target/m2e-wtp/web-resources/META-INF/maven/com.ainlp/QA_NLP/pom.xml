@@ -52,4 +52,8 @@
     	<!-- 在 integration-test 的 pre 阶段启动 jetty -->
     	<execution>
     		<id>start-jetty</id>
-    		<phase>pr
+    		<phase>pre-integration-test</phase>
+    		<goals>
+    			<goal>run</goal>
+    		</goals>
+    	
