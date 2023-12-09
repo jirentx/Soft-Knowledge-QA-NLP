@@ -3,4 +3,7 @@ com\cnn\cnnn\CnnLayer.class
 com\word2vec\domain\WordNeuron.class
 com\word2vec\util\WordKmeans$Classes.class
 com\cnn\cnnn\CnnNomalization.class
-com\cnn\cnnn\ModelT
+com\cnn\cnnn\ModelTrain.class
+com\word2vec\Word2VEC.class
+com\cnn\cnnn\PreprocessText.class
+com\word2vec
