@@ -1,1 +1,4 @@
-com\word2
+com\word2vec\Learn.class
+com\cnn\cnnn\CnnLayer.class
+com\word2vec\domain\WordNeuron.class
+com\word2vec
