@@ -1,4 +1,6 @@
 com\word2vec\Learn.class
 com\cnn\cnnn\CnnLayer.class
 com\word2vec\domain\WordNeuron.class
-com\word2vec
+com\word2vec\util\WordKmeans$Classes.class
+com\cnn\cnnn\CnnNomalization.class
+com\cnn\cnnn\ModelT
