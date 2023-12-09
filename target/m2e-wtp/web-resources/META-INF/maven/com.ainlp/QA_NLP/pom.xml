@@ -64,4 +64,10 @@
     		<goals>
     			<goal>stop</goal>
     		</goals>
-    	</e
+    	</execution>
+    </executions>
+</plugin>
+
+</plugins>
+</build>
+</project>
