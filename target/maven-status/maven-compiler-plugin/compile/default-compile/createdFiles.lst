@@ -11,4 +11,7 @@ com\word2vec\domain\WordEntry.class
 com\word2vec\util\WordKmeans$Classes$1.class
 com\word2vec\domain\HiddenNeuron.class
 com\cnn\cnnn\RELU.class
-com\cnn\utils\SmartRobot
+com\cnn\utils\SmartRobot.class
+com\word2vec\util\MapCount.class
+com\cnn\utils\RobotTest.class
+com\word2vec
