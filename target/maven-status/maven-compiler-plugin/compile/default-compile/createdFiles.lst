@@ -6,4 +6,6 @@ com\cnn\cnnn\CnnNomalization.class
 com\cnn\cnnn\ModelTrain.class
 com\word2vec\Word2VEC.class
 com\cnn\cnnn\PreprocessText.class
-com\word2vec
+com\word2vec\domain\Neuron.class
+com\word2vec\domain\WordEntry.class
+com\word2vec\util\WordKmeans$Cl
