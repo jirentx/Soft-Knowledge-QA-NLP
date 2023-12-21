@@ -17,4 +17,4 @@ com\cnn\utils\RobotTest.class
 com\word2vec\util\Haffman.class
 com\cnn\entity\Cnn.class
 com\cnn\utils\CnnUtils.class
-com\word2ve
+com\word2vec\util\WordKmeans.class
