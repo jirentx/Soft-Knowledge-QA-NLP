@@ -52,4 +52,5 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_el_expressionfactory == null) {
       synchronized (this) {
         if (_el_expressionfactory == null) {
-          _el_expressionfactory = 
+          _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
+  
