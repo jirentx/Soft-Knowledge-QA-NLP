@@ -60,4 +60,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public org.apache.tomcat.InstanceManager _jsp_getInstanceManager() {
-    if (_jsp_instancemanager == nu
+    if (_jsp_instancemanager == null) {
+      synchronized (this) {
+        if (_jsp_instancemanager == null) {
+          _j
