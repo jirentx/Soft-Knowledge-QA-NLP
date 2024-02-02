@@ -63,4 +63,4 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jsp_instancemanager == null) {
       synchronized (this) {
         if (_jsp_instancemanager == null) {
-          _j
+          _jsp_instancemanager = org.apache.jasper.runtime.InstanceManagerFactory.getInstanceManager(getServlet
