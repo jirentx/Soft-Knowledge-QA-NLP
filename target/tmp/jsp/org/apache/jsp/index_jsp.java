@@ -85,4 +85,6 @@ response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "JSPs only permit 
 return;
 }
 
-    final javax.servl
+    final javax.servlet.jsp.PageContext pageContext;
+    javax.servlet.http.HttpSession session = null;
+    final javax.serv
