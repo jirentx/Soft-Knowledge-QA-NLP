@@ -81,4 +81,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 final java.lang.String _jspx_method = request.getMethod();
 if (!"GET".equals(_jspx_method) && !"POST".equals(_jspx_method) && !"HEAD".equals(_jspx_method) && !javax.servlet.DispatcherType.ERROR.equals(request.getDispatcherType())) {
-response.sendError(HttpServletResponse.SC_M
+response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "JSPs only permit GET POST or HEAD");
+return;
+}
+
+    final javax.servl
