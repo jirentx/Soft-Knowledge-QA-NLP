@@ -80,4 +80,5 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         throws java.io.IOException, javax.servlet.ServletException {
 
 final java.lang.String _jspx_method = request.getMethod();
-if (!"GET".equals(_jspx_method) && !"POST".equals(_jspx_method) && !"HEAD".equals(_jspx_method) && !javax.servlet.DispatcherType.ERROR.equals(requ
+if (!"GET".equals(_jspx_method) && !"POST".equals(_jspx_method) && !"HEAD".equals(_jspx_method) && !javax.servlet.DispatcherType.ERROR.equals(request.getDispatcherType())) {
+response.sendError(HttpServletResponse.SC_M
