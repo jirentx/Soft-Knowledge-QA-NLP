@@ -87,4 +87,6 @@ return;
 
     final javax.servlet.jsp.PageContext pageContext;
     javax.servlet.http.HttpSession session = null;
-    final javax.serv
+    final javax.servlet.ServletContext application;
+    final javax.servlet.ServletConfig config;
+   
