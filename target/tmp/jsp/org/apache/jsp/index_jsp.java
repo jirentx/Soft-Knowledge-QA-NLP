@@ -92,4 +92,9 @@ return;
     javax.servlet.jsp.JspWriter out = null;
     final java.lang.Object page = this;
     javax.servlet.jsp.JspWriter _jspx_out = null;
-    javax.servlet.jsp.PageContext _jspx_page_contex
+    javax.servlet.jsp.PageContext _jspx_page_context = null;
+
+
+    try {
+      response.setContentType("text/html; charset=UTF-8");
+     
