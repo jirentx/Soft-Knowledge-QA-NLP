@@ -97,4 +97,5 @@ return;
 
     try {
       response.setContentType("text/html; charset=UTF-8");
-     
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, 
