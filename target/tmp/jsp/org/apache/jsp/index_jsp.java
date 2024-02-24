@@ -107,4 +107,4 @@ return;
       _jspx_out = out;
 
       out.write("\r\n");
-  
+      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://w
