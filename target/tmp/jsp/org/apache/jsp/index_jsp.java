@@ -111,4 +111,5 @@ return;
       out.write("<html lang=\"zh-CN\">\r\n");
       out.write("<head>\r\n");
       out.write("<meta charset=\"UTF-8\">\r\n");
-      out.
+      out.write("<title>木木问答</title>\r\n");
+      out.write("<link rel=\"stylesheet\"
