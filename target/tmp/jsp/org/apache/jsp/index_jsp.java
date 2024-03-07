@@ -112,4 +112,6 @@ return;
       out.write("<head>\r\n");
       out.write("<meta charset=\"UTF-8\">\r\n");
       out.write("<title>木木问答</title>\r\n");
-      out.write("<link rel=\"stylesheet\"
+      out.write("<link rel=\"stylesheet\" href=\"css/index.css\" />\r\n");
+      out.write("</head>\r\n");
+      out.write("\
