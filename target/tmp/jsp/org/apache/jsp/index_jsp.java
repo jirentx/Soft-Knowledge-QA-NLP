@@ -114,4 +114,6 @@ return;
       out.write("<title>木木问答</title>\r\n");
       out.write("<link rel=\"stylesheet\" href=\"css/index.css\" />\r\n");
       out.write("</head>\r\n");
-      out.write("\
+      out.write("\r\n");
+      out.write("<body>\r\n");
+      out.write("<img src=\"img/bgImg.jpg\" class=\"bgImg
