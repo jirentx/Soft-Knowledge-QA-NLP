@@ -118,4 +118,6 @@ return;
       out.write("<body>\r\n");
       out.write("<img src=\"img/bgImg.jpg\" class=\"bgImg\" />\r\n");
       out.write("<div class=\"content\">\r\n");
-      out.write("\
+      out.write("\t<div class=\"bidTitle\">木木问答搜索</div>\r\n");
+      out.write("\t<div class=\"logCon\">\r\n");
+   
