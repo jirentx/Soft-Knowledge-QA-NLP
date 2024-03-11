@@ -116,4 +116,6 @@ return;
       out.write("</head>\r\n");
       out.write("\r\n");
       out.write("<body>\r\n");
-      out.write("<img src=\"img/bgImg.jpg\" class=\"bgImg
+      out.write("<img src=\"img/bgImg.jpg\" class=\"bgImg\" />\r\n");
+      out.write("<div class=\"content\">\r\n");
+      out.write("\
