@@ -120,4 +120,4 @@ return;
       out.write("<div class=\"content\">\r\n");
       out.write("\t<div class=\"bidTitle\">木木问答搜索</div>\r\n");
       out.write("\t<div class=\"logCon\">\r\n");
-   
+      out.write("\t\t<div class=\"line\" style=\"float:left;margin-left:20%\"><span>此处搜索</spa
