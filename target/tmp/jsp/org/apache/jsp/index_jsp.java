@@ -123,4 +123,5 @@ return;
       out.write("\t\t<div class=\"line\" style=\"float:left;margin-left:20%\"><span>此处搜索</span>\r\n");
       out.write("\t\t<input class=\"bt_input\" type=\"text\" /></div>\r\n");
       out.write("\t\t<div><button type=\"button\" class=\"logingBut\">搜索</button></div>\r\n");
-      out.write("\t\t<di
+      out.write("\t\t<div class=\"line\"><span>此处回答</span>\t</div>\r\n");
+      out.write("\t\t<textarea style=\"wid
