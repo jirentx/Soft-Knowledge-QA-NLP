@@ -125,4 +125,6 @@ return;
       out.write("\t\t<div><button type=\"button\" class=\"logingBut\">搜索</button></div>\r\n");
       out.write("\t\t<div class=\"line\"><span>此处回答</span>\t</div>\r\n");
       out.write("\t\t<textarea style=\"width:500px;height:300px;font-size:20px;\"></textarea><textarea style=\"width:500px;height:300px;font-size:20px;\"></textarea></div>\r\n");
-      out.write("\t\t\
+      out.write("\t\t\r\n");
+      out.write("\r\n");
+      out.write("<p>没有账号？<a href=\"login.jsp\" target
