@@ -127,4 +127,7 @@ return;
       out.write("\t\t<textarea style=\"width:500px;height:300px;font-size:20px;\"></textarea><textarea style=\"width:500px;height:300px;font-size:20px;\"></textarea></div>\r\n");
       out.write("\t\t\r\n");
       out.write("\r\n");
-      out.write("<p>没有账号？<a href=\"login.jsp\" target
+      out.write("<p>没有账号？<a href=\"login.jsp\" target=\"_blank\">点击注册</a></p>\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("</body>\
