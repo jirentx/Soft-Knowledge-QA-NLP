@@ -130,4 +130,8 @@ return;
       out.write("<p>没有账号？<a href=\"login.jsp\" target=\"_blank\">点击注册</a></p>\r\n");
       out.write("</div>\r\n");
       out.write("\r\n");
-      out.write("</body>\
+      out.write("</body>\r\n");
+      out.write("\r\n");
+      out.write("</html>");
+    } catch (java.lang.Throwable t) {
+     
