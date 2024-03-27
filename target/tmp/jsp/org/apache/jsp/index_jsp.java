@@ -134,4 +134,6 @@ return;
       out.write("\r\n");
       out.write("</html>");
     } catch (java.lang.Throwable t) {
-     
+      if (!(t instanceof javax.servlet.jsp.SkipPageException)){
+        out = _jspx_out;
+        
