@@ -136,4 +136,6 @@ return;
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
-        
+        if (out != null && out.getBufferSize() != 0)
+          try {
+            if (response.isComm
