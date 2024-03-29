@@ -138,4 +138,8 @@ return;
         out = _jspx_out;
         if (out != null && out.getBufferSize() != 0)
           try {
-            if (response.isComm
+            if (response.isCommitted()) {
+              out.flush();
+            } else {
+              out.clearBuffer();
+            }
