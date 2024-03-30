@@ -144,4 +144,7 @@ return;
               out.clearBuffer();
             }
           } catch (java.io.IOException e) {}
-        if (_jspx_page_context != null
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+   
